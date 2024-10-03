@@ -14,6 +14,17 @@ class _CounterScreenState extends State<CounterScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Center(child: Text("Counter Screen",style: TextStyle(fontSize: 55),)),
+        leading: IconButton(
+          onPressed: (){}, 
+          icon: const Icon(Icons.refresh_rounded),
+      ),
+      actions: [IconButton(
+          onPressed: (){
+            counter=0;
+            setState((){});
+          }, 
+          icon: const Icon(Icons.refresh_rounded),
+      )],
       ),
       body: Center(
         child: Column( 
@@ -21,7 +32,7 @@ class _CounterScreenState extends State<CounterScreen> {
           //crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text("$counter",style: const TextStyle(fontSize: 160,fontWeight: FontWeight.w100),),
-            Text (click, style: TextStyle(fontSize: 25),)
+            Text (click, style: const TextStyle(fontSize: 25),)
             
 
           ],
@@ -35,19 +46,105 @@ class _CounterScreenState extends State<CounterScreen> {
              ElevatedButton(onPressed: null, child: Text("Incrementar"))] */
           ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          counter++;
-          if (counter==1){
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          
+      // FloatingActionButton(
+        
+      //   onPressed: (){
+      //     counter++;
+      //     if (counter==1){
+      //       click="click";
+      //     }
+      //     else{
+      //       click="clicks";
+      //     }
+      //     setState((){});
+      //   },
+      //   child: const Icon(Icons.plus_one),
+      //   ),
+      //   FloatingActionButton(
+      //   onPressed: (){
+      //     if(counter!=0){
+      //     counter--;
+      //     }
+      //     if (counter==1){
+      //       click="click";
+      //     }
+      //     else{
+      //       click="clicks";
+      //     }
+      //     setState((){});
+      //   },
+      //   child: const Text("-1"),
+      //   ),
+        CustomButton(
+          icon: Icons.plus_one,
+          onPressed: (){
+            counter++;
+            if (counter==1){
             click="click";
           }
           else{
             click="clicks";
           }
-          setState((){});
-        },
-        child: const Icon(Icons.plus_one),
+            setState((){});
+          },
+          ),
+          const SizedBox(height: 10,width: 10,),
+          CustomButton(
+          icon: Icons.exposure_minus_1,
+          onPressed: (){
+            if(counter!=0){
+            counter--;
+            }
+            if (counter==1){
+            click="click";
+          }
+          else{
+            click="clicks";
+          }
+            setState((){});
+          },
+          ),
+          const SizedBox(height: 10,width: 10,),
+          CustomButton(
+          icon: Icons.refresh_outlined,
+          onPressed: (){
+            counter=0;
+            if (counter==1){
+            click="click";
+          }
+          else{
+            click="clicks";
+          }
+            setState((){});
+          },
+          ),
+          const SizedBox(height: 10,width: 10,),
+        ]
         ),
+    );
+  }
+}
+
+class CustomButton extends StatelessWidget {
+  final IconData icon;
+  final VoidCallback? onPressed;
+  const CustomButton({
+    super.key,
+    required this.icon,
+    this.onPressed
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return FloatingActionButton(
+    backgroundColor: Colors.blue,
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+    onPressed: onPressed,
+    child: Icon(icon),
     );
   }
 }

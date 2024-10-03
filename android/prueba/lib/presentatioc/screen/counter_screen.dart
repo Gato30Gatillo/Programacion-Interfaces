@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class CounterScreen extends StatelessWidget {
+  const CounterScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     
-    var height_box=MediaQuery.of(context).size.width;
-    var width_box=MediaQuery.of(context).size.width*0.2;
+    var widthBox=MediaQuery.of(context).size.width;
+    var heightBox=MediaQuery.of(context).size.height*0.2;
 
 
     return Scaffold(
@@ -22,18 +22,18 @@ class MyApp extends StatelessWidget {
             children: [
              Container(
               color: Colors.red,
-              width: width_box*0.33,
-              height: height_box,
+              width: widthBox*0.33,
+              height: heightBox,
             ),
             Container(
               color: Colors.green,
-              width: width_box*0.33,
-              height: height_box,
+              width: widthBox*0.33,
+              height: heightBox,
             ),
             Container(
               color: Colors.blue,
-              width: width_box*0.34,
-              height: height_box,
+              width: widthBox*0.34,
+              height: heightBox,
             ),
             ]
           ),
@@ -41,13 +41,13 @@ class MyApp extends StatelessWidget {
             children: [
             Container(
               color: Colors.red,
-              width: width_box*0.5,
-              height: height_box,
+              width: widthBox*0.5,
+              height: heightBox,
             ),
             Container(
               color: Colors.blue,
-              width: width_box*0.5,
-              height: height_box,
+              width: widthBox*0.5,
+              height: heightBox,
             ),
             ]
             ),
@@ -55,18 +55,18 @@ class MyApp extends StatelessWidget {
             children: [
             Container(
               color: Colors.red,
-              width: width_box*0.25,
-              height: height_box,
+              width: widthBox*0.25,
+              height: heightBox,
             ),
             Container(
               color: Colors.green,
-              width: width_box*0.5,
-              height: height_box,
+              width: widthBox*0.5,
+              height: heightBox,
             ),
             Container(
               color: Colors.blue,
-              width: width_box*0.25,
-              height: height_box,
+              width: widthBox*0.25,
+              height: heightBox,
             ),
             ]
             ),
