@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:yes_no_app/domain/entities/message.dart';
+import 'package:yes_no_app/presentation/providers/chat_provider.dart';
 import 'package:yes_no_app/presentation/widgets/hermessage_bubble.dart';
 import 'package:yes_no_app/presentation/widgets/mymessage_bubble.dart';
 import 'package:yes_no_app/presentation/widgets/share/message_field_box.dart';
@@ -29,18 +32,28 @@ class _ChatView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+final chatprovider = context.watch<ChatProvider>();
+
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [  
-            Expanded(child: ListView.builder(
-            itemCount: 100,
-            itemBuilder: (context, index){
-              return (index%2==0)
-              ? const HermessageBubble() 
-              : const MymessageBubble();
-            }
+            Expanded(
+            child: ListView.builder(
+              controller: chatprovider.scrollcontroler,
+              itemCount: chatprovider.messageList.length,
+              itemBuilder: (context, index){
+                //return (index%2==0)
+                //? const HermessageBubble() 
+                //: const MymessageBubble();
+                final message=chatprovider.messageList[index];
+                return (message.fromWho==FromWho.hers)
+                ? const HermessageBubble() 
+                : MymessageBubble(texto: message);
+                //Text(message.text);
+              }
             )
             ),
             const MessagefieldBox()

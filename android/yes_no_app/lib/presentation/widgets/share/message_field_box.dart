@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:yes_no_app/presentation/providers/chat_provider.dart';
 
 class MessagefieldBox extends StatelessWidget {
   const MessagefieldBox({super.key});
@@ -7,6 +9,7 @@ class MessagefieldBox extends StatelessWidget {
   Widget build(BuildContext context) {
     //final colors= Theme.of(context).colorScheme;
 
+    final chatprovider = context.watch<ChatProvider>();
     final textControler= TextEditingController();
     final focusNode=FocusNode();
 
@@ -28,7 +31,8 @@ class MessagefieldBox extends StatelessWidget {
           icon: const Icon(Icons.send),
           onPressed: () {
             final textValue=textControler.value.text;
-            print("send mesagge $textValue");
+            //print("send mesagge $textValue");
+            chatprovider.sendMessage(textValue);
             textControler.clear();
           },
         ));
@@ -41,7 +45,8 @@ class MessagefieldBox extends StatelessWidget {
       controller: textControler,
       decoration: inputDecoration,
       onFieldSubmitted: (value) {
-        print("$value");
+        //print("$value");
+        chatprovider.sendMessage(value);
         textControler.clear();
         focusNode.requestFocus();
       },
