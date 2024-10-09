@@ -50,7 +50,7 @@ final chatprovider = context.watch<ChatProvider>();
                 //: const MymessageBubble();
                 final message=chatprovider.messageList[index];
                 return (message.fromWho==FromWho.hers)
-                ? const HermessageBubble() 
+                ? HermessageBubble(message: message) 
                 : MymessageBubble(texto: message);
                 //Text(message.text);
               }
