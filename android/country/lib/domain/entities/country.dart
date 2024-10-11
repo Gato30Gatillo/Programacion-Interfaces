@@ -1,12 +1,10 @@
-import 'package:country/infraestructura/models/countrymodel.dart';
-
 class Country {
-  final Name name;
-  final Flags imageUrl;
-  final String capital;
+   String nombre;
+   String imageUrl;
+   String capital;
 
 Country({
-  required this.name,
+  required this.nombre,
   required this.imageUrl,
   required this.capital,
 });

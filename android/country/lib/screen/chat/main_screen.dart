@@ -1,6 +1,9 @@
 import 'package:country/domain/entities/country.dart';
+import 'package:country/presentation/providers/country_provider.dart';
+import 'package:country/widgets/share/country_bubble.dart';
 import 'package:country/widgets/share/message_field_box.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -21,10 +24,13 @@ class MainScreen extends StatelessWidget {
 }
 
 class _ChatView extends StatelessWidget {
-  const _ChatView({super.key});
+  const _ChatView();
+
 
   @override
   Widget build(BuildContext context) {
+
+    final provider = context.watch<CountryProvider>();
 
     return SafeArea(
       child: Padding(
@@ -34,13 +40,10 @@ class _ChatView extends StatelessWidget {
             children: [  
               Expanded(
               child: ListView.builder(
+                itemCount: provider.countryList.length,
                 itemBuilder: (context, index){
-                  //return Container(
-                    //Text(Country.name),
-                    //child: Image.network(Country.imageUrl),
-                    //Text(Country.capital),
-                    return const Text("hola");
-                    //);
+                  Country pais = provider.countryList[0];
+                  return CountryBubble(country: pais);
                 }
               )
               ),
@@ -51,4 +54,4 @@ class _ChatView extends StatelessWidget {
       ),
     );
   }
-} 
+}

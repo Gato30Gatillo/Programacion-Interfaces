@@ -1,4 +1,6 @@
+import 'package:country/presentation/providers/country_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class MessagefieldBox extends StatelessWidget {
   const MessagefieldBox({super.key});
@@ -6,6 +8,7 @@ class MessagefieldBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    final countryprovider = context.watch<CountryProvider>();
     final textControler= TextEditingController();
     final focusNode=FocusNode();
 
@@ -22,6 +25,8 @@ class MessagefieldBox extends StatelessWidget {
         suffixIcon: IconButton(
           icon: const Icon(Icons.send),
           onPressed: () {
+            final textValue=textControler.value.text;
+            countryprovider.reply(textValue);
             textControler.clear();
           },
         ));
@@ -35,6 +40,7 @@ class MessagefieldBox extends StatelessWidget {
       decoration: inputDecoration,
       onFieldSubmitted: (value) {
         //print("$value");
+        countryprovider.reply(value);
         textControler.clear();
         focusNode.requestFocus();
       },
