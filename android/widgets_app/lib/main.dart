@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_app/config/router/app_router.dart';
 import 'package:widgets_app/config/theme/app_theme.dart';
 
 void main() => runApp(const MyApp());
@@ -8,18 +9,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Widgets App',
       theme: AppTheme(selectedColor: 0).theme(),
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Widgets App Bar'),
-        ),
-        body: Center(
-          child: FilledButton(onPressed: (){}, child: const Text("filled button")),
-        ),
-      ),
+      routerConfig: appRouter,
+      //routerConfig: appRouter,{
+      //  "/": (context) => const HomeScreen(),
+      //  "/Buttons": (context) => const ButtonsScreen(),
+      //  "/Cards": (context) => const CardsScreen()
+      //}, cuando no habia materialapp.router
     );
   }
 }
