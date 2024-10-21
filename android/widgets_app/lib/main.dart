@@ -22,3 +22,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//añadir todas las pantallas en app_router y menu_items, Ademas estaria bien poner los exports de dichas pantallas en screen
