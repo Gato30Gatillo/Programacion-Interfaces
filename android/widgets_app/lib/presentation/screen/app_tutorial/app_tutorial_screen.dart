@@ -12,9 +12,9 @@ class SlideInfo {
 }
 
 final slides = <SlideInfo>[
-  SlideInfo('Busca la comida', 'Exercitation voluptate cillum eu aute dolor irure aliquip.', 'assets/images/1.png'),
-  SlideInfo('Entrega rápida', 'Ullamco ullamco duis labore quis occaecat culpa laborum id incididunt.', 'assets/images/2.png'),
-  SlideInfo('Disfruta la comida', 'Ea officia exercitation voluptate nostrud amet esse ut exercitation deserunt est enim est.', 'assets/images/3.png'),
+  SlideInfo('Busca la comida', 'Exercitation voluptate cillum eu aute dolor irure aliquip.', '../../../assets/images/1.png'),
+  SlideInfo('Entrega rápida', 'Ullamco ullamco duis labore quis occaecat culpa laborum id incididunt.', '../../../assets/images/2.png'),
+  SlideInfo('Disfruta la comida', 'Ea officia exercitation voluptate nostrud amet esse ut exercitation deserunt est enim est.', '../../../assets/images/3.png'),
 ];
 
 
@@ -126,6 +126,7 @@ class _Slide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    final size= MediaQuery.of(context).size;
     final titleStyle = Theme.of(context).textTheme.titleLarge;
     final captionStyle = Theme.of(context).textTheme.bodySmall;
 
@@ -136,7 +137,7 @@ class _Slide extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image( image: AssetImage( imageUrl )),
+            Image( image: AssetImage( imageUrl ),height: size.height*0.3,),
             const SizedBox(height: 20 ),
             Text( title, style: titleStyle, ),
             const SizedBox(height: 10 ),

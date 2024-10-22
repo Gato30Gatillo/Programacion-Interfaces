@@ -1,13 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:widgets_app/presentation/screen/animated/animated_screen.dart';
-import 'package:widgets_app/presentation/screen/app_tutorial/app_tutorial_screen.dart';
-import 'package:widgets_app/presentation/screen/counter/counter_screen.dart';
-import 'package:widgets_app/presentation/screen/infinite_scroll/infinite_scroll_screen.dart';
-import 'package:widgets_app/presentation/screen/progress/progress_screen.dart';
-import 'package:widgets_app/presentation/screen/snackbar/snackbar_screen.dart';
-import 'package:widgets_app/presentation/screen/theme_changer/theme_changer_screen.dart';
-import 'package:widgets_app/presentation/screen/ui_controls/ui_controls_screen.dart';
-
 import '../../presentation/screen/screen.dart';
 
 class MenuItems {

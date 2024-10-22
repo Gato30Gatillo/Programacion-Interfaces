@@ -57,7 +57,7 @@ class _UiControlsViewState extends State<_UiControlsView> {
               value: Transportation.car,
               groupValue: selectedTransportation,
               onChanged: (value) => setState(() {
-                selectedTransportation = Transportation.car;
+                selectedTransportation = Transportation.car;// es valido usar un value! la ! es necesaria por que value podria llegar aser nulo
               }),
             ),
             RadioListTile(
