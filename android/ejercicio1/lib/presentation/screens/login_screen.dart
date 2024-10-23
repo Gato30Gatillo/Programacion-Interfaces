@@ -30,12 +30,13 @@ class LoginScreen extends StatelessWidget {
             TextFormField(onFieldSubmitted: (value) => pass=value,controller: textControler2,),
             IconButton(
               onPressed: () {
-              if(textControler1.text=="a" && textControler2.text=="a"){
-                context.pushNamed(item.name);
-              }
-              else{
-                return;
-              }
+                //if(textControler1.text==textControler2.text){
+                if(textControler1.text=="a" && textControler2.text=="a"){
+                  context.pushNamed(item.name);
+                }
+                else{
+                  return;
+                }
             }, 
               icon: const Icon(Icons.arrow_forward_rounded)
             ),

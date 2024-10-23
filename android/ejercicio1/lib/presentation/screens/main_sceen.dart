@@ -12,8 +12,10 @@ class MainSceen extends StatelessWidget {
       appBar: AppBar(
 
       ),
-      body: const Placeholder(
-
+      body: const Column(
+        children: [
+          Text("Bienvenido")
+        ],
       ),
     );
   }
