@@ -1,16 +1,13 @@
 import 'package:dio/dio.dart';
-import 'package:ejercicio1/domain/entities/user.dart';
-import 'package:ejercicio1/infraestructure/models/user_model.dart';
 
 class GetUserModel {
-  final dio=Dio();
+  final _dio=Dio();
 
-  Future<UserModel> getAnswer()async{
-    final response = await dio.get("https://script.google.com/macros/s/AKfycbwDv0d_GQWzGZrXD2V7b_ycX7DGSNk9i3Sw9g7wfxoHq8m-fhczTZTsr8k15CQcYlrU/exec?spreadsheetId=1p5gLnar8Un2DHa1QtP0Nvod6jyExvdJ3bZnfwUePsa4&sheet=usuarios"); 
+  Future getAnswer()async{
+    final response = await _dio.get("https://script.google.com/macros/s/AKfycbwtqeCI3105QvnYeq00g7WDel1bDYhEi3Ch8bjpMnxajIyAhhEAXexCJamMxburwy00UA/exec?spreadsheetId=1WR0MpsMVbCChMw4kg26OxzkMbiAaEj5UNOQBYnhIGvM&sheet=usuarios"); 
 
     if(response.statusCode==200){
-        final usermodel= UserModel.fromJsonMap(response.data);
-        return usermodel;
+        return response.data;
     }
 
     throw UnimplementedError();

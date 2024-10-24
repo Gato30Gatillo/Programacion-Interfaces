@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
 class MainSceen extends StatelessWidget {
-  const MainSceen({super.key,this.email,this.pass});
+  const MainSceen({super.key,this.email,});
 
   static const name = 'main_screen';
   final String? email;
-  final String? pass;
 
   @override
   Widget build(BuildContext context) {

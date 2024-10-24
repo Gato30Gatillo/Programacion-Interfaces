@@ -14,10 +14,10 @@ final appRouter = GoRouter(
       },
     ),
     GoRoute(
-      path: '/Buttons',
+      path: '/main_screen/:email',
       name: MainSceen.name,
       builder: (BuildContext context, GoRouterState state) {
-        return const MainSceen();
+        return MainSceen(email: state.pathParameters["email"]);
       },
     ),
   ],

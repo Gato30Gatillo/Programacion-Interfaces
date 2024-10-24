@@ -15,10 +15,10 @@ class ChatProvider extends ChangeNotifier {
   ];
 
   final ScrollController scrollcontroler= ScrollController(); 
-  final Getyesnoanswer GetYesNoAnswer = Getyesnoanswer();
+  final Getyesnoanswer getYesNoAnswer = Getyesnoanswer();
 
   Future<void> herReply()async{
-    final hermessage = await GetYesNoAnswer.getAnswer();
+    final hermessage = await getYesNoAnswer.getAnswer();
     if(hermessage.text.isEmpty) return;
     messageList.add(hermessage);
     notifyListeners();

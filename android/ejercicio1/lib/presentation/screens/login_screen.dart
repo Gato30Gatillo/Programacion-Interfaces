@@ -17,7 +17,6 @@ class LoginScreen extends StatelessWidget {
     final textControler2= TextEditingController();
     final provider = context.watch<LoginProvider>();
 
-
     return Scaffold(
       appBar: AppBar(
         title: const Text("Material app"),
@@ -28,18 +27,20 @@ class LoginScreen extends StatelessWidget {
             const Text("user email"),
             TextFormField(onFieldSubmitted: (value) => MainSceen(email: value,),controller: textControler1,),
             const Text("Password"),
-            TextFormField(onFieldSubmitted: (value) => MainSceen(pass: value,),controller: textControler2,),
+            TextFormField(onFieldSubmitted: (value) => (),controller: textControler2, obscureText: true,),
             IconButton(
-              onPressed: () {
-                LoginProvider().getUsuarios();
+              onPressed: () async {
+                await provider.getUsuarios();
+                int longitud = provider.usuarios.length;
+                var email=textControler1.text;
                 //if(textControler1.text==textControler2.text){
-                for(int i=0 ;i<LoginProvider().usuarios.length ;i++){
-                final usuario=LoginProvider().usuarios[i];
-                if(textControler1.text==usuario.correo && textControler2.text==usuario.clave){
-                  context.pushNamed(MainSceen.name);
+                for(int i=0 ;i<longitud ;i++){
+                final usuario=provider.usuarios[i];
+                if(textControler1.text==usuario.nombre && textControler2.text==usuario.clave){
+                  context.goNamed(MainSceen.name, pathParameters: {"email": email});
                 }
                 else{
-                  return;
+
                 }
                 }
             }, 
