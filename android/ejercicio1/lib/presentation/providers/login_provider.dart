@@ -1,9 +1,20 @@
+import 'package:ejercicio1/config/helpers/get_user_model.dart';
+import 'package:ejercicio1/domain/entities/user.dart';
+import 'package:ejercicio1/infraestructure/models/user_model.dart';
 import 'package:flutter/material.dart';
 
 class LoginProvider extends ChangeNotifier {
 
-  Future<void> reply()async{
+  List<UserModel> usuarios=[];
 
+  final GetUserModel user = GetUserModel();
+
+  Future<void> getUsuarios()async{
+    final newUser = await user.getAnswer();
+    usuarios.add(newUser);
+    for (UserModel usuario in newUser){
+      usuarios.add(UserModel.fromJsonMap(usuario));
+    }
     notifyListeners();
    }
 
