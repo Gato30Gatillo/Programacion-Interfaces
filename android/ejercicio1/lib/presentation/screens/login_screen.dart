@@ -19,7 +19,7 @@ class LoginScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Material app"),
+        title: const Text("Login"),
       ),
       body: Center(
         child: Column(
@@ -32,16 +32,27 @@ class LoginScreen extends StatelessWidget {
               onPressed: () async {
                 await provider.getUsuarios();
                 int longitud = provider.usuarios.length;
+                bool encontrado=false;
                 var email=textControler1.text;
                 //if(textControler1.text==textControler2.text){
-                for(int i=0 ;i<longitud ;i++){
-                final usuario=provider.usuarios[i];
-                if(textControler1.text==usuario.nombre && textControler2.text==usuario.clave){
-                  context.goNamed(MainSceen.name, pathParameters: {"email": email});
+                for(int i=0 ;i<longitud && !encontrado ;i++){
+                  final usuario=provider.usuarios[i];
+                  if(textControler1.text==usuario.nombre && textControler2.text==usuario.clave){
+                    encontrado=true;
+                    context.goNamed(MainSceen.name, pathParameters: {"email": email}); 
+                  }
                 }
-                else{
-
-                }
+                if(!encontrado){
+                  showDialog(
+                    context: context, 
+                    builder: (
+                      context){ 
+                        return const AlertDialog(
+                          content: Text("El usuario o la contraseña no existen"),
+                        );
+                        }
+                    
+                    );
                 }
             }, 
               icon: const Icon(Icons.arrow_forward_rounded)
