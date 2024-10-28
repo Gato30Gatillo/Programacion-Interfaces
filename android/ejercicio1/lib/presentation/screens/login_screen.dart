@@ -29,17 +29,20 @@ class LoginScreen extends StatelessWidget {
             const Text("Password"),
             TextFormField(onFieldSubmitted: (value) => (),controller: textControler2, obscureText: true,),
             IconButton(
-              onPressed: () async {
+              onPressed: () async { 
                 await provider.getUsuarios();
                 int longitud = provider.usuarios.length;
                 bool encontrado=false;
                 var email=textControler1.text;
+                var pass=textControler2.text;
                 //if(textControler1.text==textControler2.text){
                 for(int i=0 ;i<longitud && !encontrado ;i++){
+                  
                   final usuario=provider.usuarios[i];
                   if(textControler1.text==usuario.nombre && textControler2.text==usuario.clave){
                     encontrado=true;
-                    context.goNamed(MainSceen.name, pathParameters: {"email": email}); 
+                    
+                    context.goNamed(MainSceen.name, pathParameters: {"email": email, "pass": pass}); 
                   }
                 }
                 if(!encontrado){
@@ -63,4 +66,3 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
-

@@ -5,20 +5,24 @@ import 'package:flutter/material.dart';
 class LoginProvider extends ChangeNotifier {
 
   List<UserModel> usuarios=[];
+  bool initialLoading=true;
 
   Future<void> getUsuarios()async{
     //print("ANTES DEL RESPONSE");
+    await Future.delayed(const Duration(seconds: 2));
     final response = await GetUserModel().getAnswer();
     //print("DESPUES DEL RESPONSE");
     usuarios.clear();
+    
     //print("DESPUES DEL clear");
     //List <UserModel> lista = userModelFromJson(response);
     //print(usuarios.length);
     usuarios.addAll(userModelFromJson(response));
     //print(usuarios);
     //print(usuarios.length);
+    initialLoading=false;
     notifyListeners();
-   }
+  }
 
 }
 //enlace al exel
