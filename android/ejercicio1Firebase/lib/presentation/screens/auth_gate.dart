@@ -1,9 +1,10 @@
-import 'package:ejercicio1/main.dart';
+import 'package:ejercicio1/presentation/providers/login_provider.dart';
 import 'package:ejercicio1/presentation/screens/main_sceen.dart';
 import 'package:firebase_auth/firebase_auth.dart' hide EmailAuthProvider;
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:firebase_ui_oauth_google/firebase_ui_oauth_google.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class AuthGate extends StatelessWidget {
  const AuthGate({super.key});
@@ -13,6 +14,8 @@ class AuthGate extends StatelessWidget {
 
  @override
  Widget build(BuildContext context) {
+    final provider = context.watch<LoginProvider>();
+
    return StreamBuilder<User?>(
      stream: FirebaseAuth.instance.authStateChanges(),
      builder: (context, snapshot) {
@@ -59,13 +62,23 @@ class AuthGate extends StatelessWidget {
            },*/
          );
        }
-      return FirebaseAuth.instance.currentUser?.email == 'rdelcub359@g.educaand.es'
-        ? const MainSceen()
-        : const Scaffold(
-          body: Center(
-          child: Text('You are not authorized to view this page.'),
-          ),
-          );
+
+        bool isAuthorized = false;
+        int longitud = provider.usuarios.length;
+
+        for (int i = 0; i < longitud && !isAuthorized; i++) {
+          if (FirebaseAuth.instance.currentUser?.email == provider.usuarios[i].email) {
+            isAuthorized = true;
+          }
+        }
+
+        return isAuthorized 
+          ? MainSceen(email: FirebaseAuth.instance.currentUser?.email,)
+          : const Scaffold(
+              body: Center(
+                child: Text('You are not authorized to view this page.'),
+              ),
+            );
      },
    );
  }

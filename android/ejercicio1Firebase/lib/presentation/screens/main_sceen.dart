@@ -38,7 +38,7 @@ class MainSceen extends StatelessWidget {
 
               for (int i = 0; i < longitud && !encontrado; i++) {
                 final usuario = provider.usuarios[i];
-                if (email == usuario.nombre && pass == usuario.clave) {
+                if (email == usuario.email) {
                   encontrado = true;
                   return const Text("Bienvenido amigo");
                 }

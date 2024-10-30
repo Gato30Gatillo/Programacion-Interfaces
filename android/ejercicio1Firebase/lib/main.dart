@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       
-      providers: [ChangeNotifierProvider(create:(_)=> LoginProvider(),lazy: false,)],
+      providers: [ChangeNotifierProvider(create:(_)=> LoginProvider()..getUsuarios(),lazy: false,)],
       child: MaterialApp.router(
         title: 'Material App',
         theme: AppTheme(selectedColor: 1).theme(),

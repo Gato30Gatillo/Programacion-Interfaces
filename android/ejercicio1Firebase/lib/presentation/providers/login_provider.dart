@@ -9,11 +9,9 @@ class LoginProvider extends ChangeNotifier {
 
   Future<void> getUsuarios()async{
     //print("ANTES DEL RESPONSE");
-    await Future.delayed(const Duration(seconds: 2));
     final response = await GetUserModel().getAnswer();
     //print("DESPUES DEL RESPONSE");
     usuarios.clear();
-    
     //print("DESPUES DEL clear");
     //List <UserModel> lista = userModelFromJson(response);
     //print(usuarios.length);
@@ -37,3 +35,4 @@ class LoginProvider extends ChangeNotifier {
 //https://script.google.com/macros/s/AKfycbyrpQ4a9FC1cPw5XJLbisGIE2YGMkmqhWDesAdLqZREymkoElQt0lRcdQYNzfEZxBEB/exec
 //https://script.google.com/macros/s/AKfycbyrpQ4a9FC1cPw5XJLbisGIE2YGMkmqhWDesAdLqZREymkoElQt0lRcdQYNzfEZxBEB/exec?spreadsheetId=1p5gLnar8Un2DHa1QtP0Nvod6jyExvdJ3bZnfwUePsa4&sheet=users
 //https://script.google.com/macros/s/AKfycbwDv0d_GQWzGZrXD2V7b_ycX7DGSNk9i3Sw9g7wfxoHq8m-fhczTZTsr8k15CQcYlrU/exec?spreadsheetId=1p5gLnar8Un2DHa1QtP0Nvod6jyExvdJ3bZnfwUePsa4&sheet=usuarios
+//https://script.google.com/macros/s/AKfycbwZ3C54PfkncinzgHQCUoAZ2m74vroqPr3PqgYssvhyunoXU2woQ7DcY5ubUAk10LkL/exec?spreadsheetId=1p5gLnar8Un2DHa1QtP0Nvod6jyExvdJ3bZnfwUePsa4&sheet=usuarios-email

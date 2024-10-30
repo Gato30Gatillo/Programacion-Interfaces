@@ -9,28 +9,20 @@ String userModelToJson(List<UserModel> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class UserModel {
-  String id;
-  String nombre;
-  String clave;
+  String email;
 
   UserModel({
-    required this.id,
-    required this.nombre,
-    required this.clave,
+    required this.email,
   });
 
   factory UserModel.fromJsonMap(Map<String, dynamic> json) {
     return UserModel(
-      id: json["id"],
-      nombre: json["nombre"],
-      clave: json["clave"],
+      email: json["email"],
     );
   }
 
   Map<String, dynamic> toJson() => {
-        "id": id,
-        "nombre": nombre,
-        "clave": clave,
+        "email": email,
       };
 }
 /*
