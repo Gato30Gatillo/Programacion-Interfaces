@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "963684907742",
+    "project_id": "nuevo-proyecto-62b0f",
+    "storage_bucket": "nuevo-proyecto-62b0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963684907742:android:c52978a353283736ede04f",
+        "android_client_info": {
+          "package_name": "es.iesjandula.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963684907742-s21f6jjqud23atkog6l14ebmug3mtnam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnCHohVDtQVZA3CPSnr-1lbJcLt5qXOwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963684907742-s21f6jjqud23atkog6l14ebmug3mtnam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
