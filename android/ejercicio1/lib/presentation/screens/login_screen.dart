@@ -15,7 +15,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final textControler1= TextEditingController();
     final textControler2= TextEditingController();
-    final provider = context.watch<LoginProvider>();
+    context.watch<LoginProvider>();
 
     return Scaffold(
       appBar: AppBar(
