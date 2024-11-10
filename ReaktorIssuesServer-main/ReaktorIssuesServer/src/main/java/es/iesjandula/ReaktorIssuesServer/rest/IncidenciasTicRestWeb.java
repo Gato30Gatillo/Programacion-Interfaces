@@ -7,6 +7,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,6 +23,7 @@ import lombok.extern.log4j.Log4j2;
 
 
 @RequestMapping(value = "/incidenciasTic", produces = { "application/json" })
+@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @Log4j2
 public class IncidenciasTicRestWeb 

@@ -15,6 +15,6 @@ class MenuItems {
     MenuItems(
       link: "/Main",
       title: "Main",
-      name: MainSceen.name  
+      name: MainScreen.name  
     ),
   ];

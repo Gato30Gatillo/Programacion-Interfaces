@@ -15,9 +15,9 @@ final appRouter = GoRouter(
     ),
     GoRoute(
       path: '/main_screen/:email',
-      name: MainSceen.name,
+      name: MainScreen.name,
       builder: (BuildContext context, GoRouterState state) {
-        return MainSceen(email: state.pathParameters["email"]);
+        return MainScreen(email: state.pathParameters["email"]);
       },
     ),
   ],

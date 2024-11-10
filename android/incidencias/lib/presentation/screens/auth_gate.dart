@@ -60,7 +60,7 @@ class AuthGate extends StatelessWidget {
          );
        }
 
-        return MainSceen(email: FirebaseAuth.instance.currentUser?.email);
+        return MainScreen(email: FirebaseAuth.instance.currentUser?.email);
      },
    );
  }

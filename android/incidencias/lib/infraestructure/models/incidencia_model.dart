@@ -1,6 +1,6 @@
 //import 'package:ejercicio1/domain/entities/user.dart';
 
-import 'dart:convert';
+/*import 'dart:convert';
 
 List<IncidenciaModel> incidenciaModelFromJson(String str) =>
     List<IncidenciaModel>.from(json.decode(str).map((x) => IncidenciaModel.fromJsonMap(x)));
@@ -45,4 +45,4 @@ class IncidenciaModel {
         "fechaIncidencia": fechaIncidencia,
         "comentario": comentario,
       };
-}
+}*/
