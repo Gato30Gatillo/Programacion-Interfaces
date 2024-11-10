@@ -1,4 +1,5 @@
 import 'package:ejercicio1/infraestructure/models/incidenciaModel.dart';
+import 'package:ejercicio1/infraestructure/models/incidenciaModelEnviar.dart';
 import 'package:ejercicio1/infraestructure/models/incidencia_model.dart';
 import 'package:ejercicio1/presentation/providers/incidencia_provider.dart';
 import 'package:flutter/material.dart';
@@ -123,13 +124,11 @@ class _MainScreenState extends State<MainScreen> {
                         child: ElevatedButton.icon(
                           onPressed: () {
                             provider.addIncidencia(
-                              Incidencias(
+                              IncidenciasEnviar(
                                 numeroAula: textControlerAula.text,
                                 nombreProfesor: textControlerProfesor.text,
                                 descripcionIncidencia: textControlerDesc.text,
                                 fechaIncidencia: textControlerFecha.text,
-                                status: "",
-                                id: provider.incidencias.length,
                               ),
                             );
 
@@ -138,6 +137,9 @@ class _MainScreenState extends State<MainScreen> {
                             textControlerAula.clear();
                             textControlerFecha.text =
                                 DateFormat('yyyy-MM-dd').format(DateTime.now());
+                            setState(() {
+    _incidenciasFuture = provider.getIncidencias();
+  });
                           },
                           icon: const Icon(Icons.send),
                           label: const Text("Enviar"),
