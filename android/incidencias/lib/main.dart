@@ -3,7 +3,7 @@ import 'package:ejercicio1/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 import 'package:ejercicio1/config/theme/app_theme.dart';
-import 'package:ejercicio1/presentation/providers/login_provider.dart';
+import 'package:ejercicio1/presentation/providers/incidencia_provider.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       
-      providers: [ChangeNotifierProvider(create:(_)=> LoginProvider()..getUsuarios(),lazy: false,)],
+      providers: [ChangeNotifierProvider(create:(_)=> IncidenciasProvider()..getIncidencias(),lazy: false,)],
       child: MaterialApp.router(
         title: 'Material App',
         theme: AppTheme(selectedColor: 1).theme(),

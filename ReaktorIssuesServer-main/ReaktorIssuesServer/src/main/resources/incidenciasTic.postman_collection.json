@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "b32e144b-3679-4432-8acb-00a141a0dc45",
+		"name": "incidenciasTic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38431175"
+	},
+	"item": [
+		{
+			"name": "CREAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "numeroAula",
+							"value": "2.6",
+							"type": "text"
+						},
+						{
+							"key": "nombreProfesor",
+							"value": "Jesuss",
+							"type": "text"
+						},
+						{
+							"key": "descripcionIncidencia",
+							"value": "sa roto otra vez",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localHost:8081/incidenciasTic/crear_incidencia",
+					"host": [
+						"localHost"
+					],
+					"port": "8081",
+					"path": [
+						"incidenciasTic",
+						"crear_incidencia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EDITAR",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "NumeroAula",
+							"value": "2.4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localHost:8081/incidenciasTic/editar_incidencia",
+					"host": [
+						"localHost"
+					],
+					"port": "8081",
+					"path": [
+						"incidenciasTic",
+						"editar_incidencia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localHost:8081/incidenciasTic/borrar_incidencia",
+					"host": [
+						"localHost"
+					],
+					"port": "8081",
+					"path": [
+						"incidenciasTic",
+						"borrar_incidencia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CAMBIAR ESTADO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Id",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "NumeroAula",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localHost:8081/incidenciasTic/resolver_incidencia/1",
+					"host": [
+						"localHost"
+					],
+					"port": "8081",
+					"path": [
+						"incidenciasTic",
+						"resolver_incidencia",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MOSTRAR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/incidenciasTic/mostrar_incidencias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"incidenciasTic",
+						"mostrar_incidencias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MOSTRAR POR ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/incidenciasTic/mostrar_incidencia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"incidenciasTic",
+						"mostrar_incidencia"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
