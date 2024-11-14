@@ -1,6 +1,4 @@
-import 'package:ejercicio1/infraestructure/models/incidenciaModel.dart';
 import 'package:ejercicio1/infraestructure/models/incidenciaModelEnviar.dart';
-import 'package:ejercicio1/infraestructure/models/incidencia_model.dart';
 import 'package:ejercicio1/presentation/providers/incidencia_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -17,6 +15,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  String? email; 
   final textControlerAula = TextEditingController();
   final textControlerProfesor = TextEditingController();
   final textControlerFecha = TextEditingController(
@@ -36,7 +35,8 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final provider = context.watch<IncidenciasProvider>();
-
+    email=widget.email;
+    textControlerProfesor.text=email!;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -133,7 +133,7 @@ class _MainScreenState extends State<MainScreen> {
                             );
 
                             textControlerDesc.clear();
-                            textControlerProfesor.clear();
+                            textControlerProfesor.text=email!;
                             textControlerAula.clear();
                             textControlerFecha.text =
                                 DateFormat('yyyy-MM-dd').format(DateTime.now());
