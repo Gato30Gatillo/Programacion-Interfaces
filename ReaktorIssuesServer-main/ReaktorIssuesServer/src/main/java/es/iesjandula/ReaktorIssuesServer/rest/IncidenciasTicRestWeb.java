@@ -1,11 +1,14 @@
 package es.iesjandula.ReaktorIssuesServer.rest;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -14,10 +17,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
 import es.iesjandula.ReaktorIssuesServer.exceptions.IssuesServerException;
 import es.iesjandula.ReaktorIssuesServer.models.IncidenciaTic;
 import es.iesjandula.ReaktorIssuesServer.repository.IncidenciaRepository;
 import es.iesjandula.ReaktorIssuesServer.utils.Costantes;
+import es.iesjandula.ReaktorIssuesServer.utils.FiltroBusqueda;
+import es.iesjandula.ReaktorIssuesServer.utils.IssuesServerError;
 import lombok.extern.log4j.Log4j2;
 
 
@@ -277,5 +283,36 @@ public class IncidenciasTicRestWeb
 			return ResponseEntity.status(500).body(issuesServerException.getBodyMesagge());
 		}
 		
+	}
+	
+	@RequestMapping(method = RequestMethod.POST)
+	public ResponseEntity<?> buscaIncidencia(@RequestBody FiltroBusqueda filtroBusqueda)
+	{
+		try
+		{
+			log.debug("DEBUG: Parametros de busqueda recibidos:\n {}", filtroBusqueda.toString());
+
+			List<IncidenciaTic> listado = IncidenciaRepository.buscaIncidencia(filtroBusqueda.getNumeroAula(), filtroBusqueda.getCorreoDocente(),
+					filtroBusqueda.getFecha(), filtroBusqueda.getDescripcionIncidencia());
+
+			log.debug("DEBUG: Objetos encontrados {}", listado.size());
+
+			if (listado.isEmpty())
+			{
+				log.info("No se han encontrado incidencias con los criterios especificados.");
+				return ResponseEntity.status(HttpStatus.NOT_FOUND)
+						.body("No se han encontrado incidencias con los criterios especificados.");
+			}
+
+			return ResponseEntity.status(HttpStatus.OK).body(listado);
+
+		}
+		catch (Exception searchIssueException)
+		{
+			String message = "ERROR: Capturado en buscaIncidencia()\n {}" + searchIssueException.getMessage();
+			log.error(message, searchIssueException);
+			IssuesServerError serverError = new IssuesServerError(3, message, searchIssueException);
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(serverError.getMapError());
+		}
 	}
 }
