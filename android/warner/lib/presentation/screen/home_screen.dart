@@ -2,24 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:warner/config/menu/menu_items.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   
   static const String name="home_screen";
 
   const HomeScreen({super.key});
 
   @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-          toolbarHeight: size.height*0.4,
+          toolbarHeight: size.height*0.3,
           leading: IconButton(onPressed: () {}, 
           icon: const Icon(Icons.arrow_back), color: Colors.white,),
           title: 
           Center(child: Image(image: const AssetImage("assets/images/parque_logo_fondo.png"),height: size.height,)),
         actions: [IconButton(onPressed: (){}, icon: const Icon(Icons.notifications_none),color: Colors.white,)],
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.blue[900],
         ),     
       body: const _HomeView()
     );
@@ -34,7 +39,6 @@ class _HomeView extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Container(
       decoration: BoxDecoration(borderRadius:BorderRadius.circular(20),border: Border.all()),
-      
       child: Column(
         children: [
           Padding(
@@ -44,9 +48,9 @@ class _HomeView extends StatelessWidget {
                 Expanded(
                   child: ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.yellow,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
+                      backgroundColor: Colors.orange,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),topLeft: Radius.circular(20)),
                       ),
                     ),
                     onPressed: () {},
@@ -54,13 +58,13 @@ class _HomeView extends StatelessWidget {
                     label: const Text("Buscar", style: TextStyle(color: Colors.white)),
                   ),
                 ),
-                const SizedBox(width: 16),
+                const SizedBox(width: 2,),
                 Expanded(
                   child: ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.yellow,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
+                      backgroundColor: Colors.orange,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(topRight: Radius.circular(20),bottomRight: Radius.circular(20)),
                       ),
                     ),
                     onPressed: () {},
@@ -77,13 +81,109 @@ class _HomeView extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Image(image: const AssetImage("assets/images/atracciones.jpg"),height: size.height*0.2,width: size.width*0.49),
-                      Image(image: const AssetImage("assets/images/restaurante.jpg"),height: size.height*0.2,width: size.width*0.49)
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Stack(
+                          children: [
+                            SizedBox(
+                              width: size.width*0.45,
+                              child: const ClipRRect(
+                                borderRadius: BorderRadius.all(Radius.circular(20)),
+                                child: Image(image: AssetImage("assets/images/atracciones.jpg"),fit: BoxFit.fill),
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Container(
+                                padding: const EdgeInsets.all(10),
+                                decoration: const BoxDecoration(
+                                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [
+                                    Colors.black,
+                                    Colors.transparent 
+                                    ]
+                                  )
+                                ),
+                                width: size.width*0.45,
+                                height: size.height*0.25,
+                                child: const Text("Atracciones",style:TextStyle(color: Colors.white,fontSize: 30)),
+                              ),
+                            )
+                          ]
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Stack(
+                          children: [
+                            SizedBox(
+                              width: size.width*0.45,
+                              child: const ClipRRect(
+                                borderRadius: BorderRadius.all(Radius.circular(20)),
+                                child: Image(image: AssetImage("assets/images/restaurante.jpg"),fit: BoxFit.fill,),
+                              )
+                            ),
+                            Positioned.fill(
+                              child: Container(
+                                padding: const EdgeInsets.all(10),
+                                decoration: const BoxDecoration(
+                                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [
+                                    Colors.black,
+                                    Colors.transparent 
+                                    ]
+                                  )
+                                ),
+                                width: size.width*0.45,
+                                height: size.height*0.25,
+                                child: const Text("Restaurantes",style:TextStyle(color: Colors.white,fontSize: 30)),
+                              ),
+                            )
+                          ]
+                        ),
+                      )
                     ],
                   ),
                   Row(
                     children: [
-                      Image(image: const AssetImage("assets/images/mapa.jpg"),height: size.height*0.2,width: size.width*0.99),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Stack(
+                          children: [
+                            SizedBox(
+                              width: size.width*0.95,
+                              child: const ClipRRect(
+                                borderRadius: BorderRadius.all(Radius.circular(20)),
+                                child: Image(image: AssetImage("assets/images/mapa.jpg"),fit: BoxFit.fill)
+                              ),
+                            ),
+                            Positioned.fill(
+                              child: Container(
+                                padding: const EdgeInsets.all(20),
+                                decoration: const BoxDecoration(
+                                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [
+                                    Colors.black,
+                                    Colors.transparent 
+                                    ]
+                                  )
+                                ),
+                                width: size.width*0.95,
+                                height: size.height*0.25,
+                                child: const Text("Mapa",style:TextStyle(color: Colors.white,fontSize: 30)),
+                              ),
+                            )
+                          ]
+                        ),
+                      ),
                     ],
                   ),
                   ListView.builder(
@@ -125,6 +225,16 @@ class _CustomListTitle extends StatelessWidget {
       onTap: () {
         context.pushNamed(item.name);
       },
+    );
+  }
+  gradientes(){
+    return const LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [
+       Colors.black,
+       Colors.transparent 
+      ]
     );
   }
 }
