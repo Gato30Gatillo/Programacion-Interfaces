@@ -1,3 +1,4 @@
+export 'package:warner/presentation/screen/loading_screen.dart';
 export 'package:warner/presentation/screen/como_llegar_screen.dart';
 export 'package:warner/presentation/screen/home_screen.dart';
 export 'package:warner/presentation/screen/horario_apertura_screen.dart';

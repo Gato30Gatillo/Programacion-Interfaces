@@ -31,12 +31,38 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-class _HomeView extends StatelessWidget {
+class _HomeView extends StatefulWidget {
   const _HomeView();
 
   @override
+  State<_HomeView> createState() => _HomeViewState();
+}
+
+class _HomeViewState extends State<_HomeView> {
+  final ScrollController controler = ScrollController();  
+  bool fondo = false;
+  @override
+  void initState() {
+    super.initState();
+    controler.addListener(() {
+      setState(() {
+        fondo = controler.position.pixels+20 >= controler.position.maxScrollExtent;
+      });
+    });
+  }
+  @override
+  void dispose() {
+    controler.dispose();
+    super.dispose();
+  }
+
+
+  @override
   Widget build(BuildContext context) {
+
     final size = MediaQuery.of(context).size;
+    
+
     return Container(
       decoration: BoxDecoration(borderRadius:BorderRadius.circular(20),border: Border.all()),
       child: Column(
@@ -77,6 +103,8 @@ class _HomeView extends StatelessWidget {
           ),
           Expanded(
             child: SingleChildScrollView(
+              controller: controler,
+              
               child: Column(
                 children: [
                   Row(
@@ -108,7 +136,7 @@ class _HomeView extends StatelessWidget {
                                 ),
                                 width: size.width*0.45,
                                 height: size.height*0.25,
-                                child: const Text("Atracciones",style:TextStyle(color: Colors.white,fontSize: 30)),
+                                child: const Text("Atracciones",style:TextStyle(color: Colors.white,fontSize: 20)),
                               ),
                             )
                           ]
@@ -141,7 +169,7 @@ class _HomeView extends StatelessWidget {
                                 ),
                                 width: size.width*0.45,
                                 height: size.height*0.25,
-                                child: const Text("Restaurantes",style:TextStyle(color: Colors.white,fontSize: 30)),
+                                child: const Text("Restaurantes",style:TextStyle(color: Colors.white,fontSize: 20)),
                               ),
                             )
                           ]
@@ -198,9 +226,14 @@ class _HomeView extends StatelessWidget {
               ),
             ),
           ),
+          Visibility(
+            visible: !fondo,
+            child: const Icon(Icons.arrow_downward_outlined)
+          ),
         ],
       ),
     );
+    //fondo = controler.position.pixels==controler.position.maxScrollExtent;        
   }
 }
 
@@ -225,16 +258,6 @@ class _CustomListTitle extends StatelessWidget {
       onTap: () {
         context.pushNamed(item.name);
       },
-    );
-  }
-  gradientes(){
-    return const LinearGradient(
-      begin: Alignment.topCenter,
-      end: Alignment.bottomCenter,
-      colors: [
-       Colors.black,
-       Colors.transparent 
-      ]
     );
   }
 }
