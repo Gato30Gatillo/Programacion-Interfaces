@@ -31,5 +31,11 @@ class IncidenciasProvider extends ChangeNotifier {
     data: formData,
     options: Options(contentType: "multipart/form-data"));
   }
+  Future<void> searchIncidencia(IncidenciasEnviar incidencia) async {
+    FormData formData = FormData.fromMap(incidencia.toJson());
+    await _dio.post("http://localhost:8081/incidenciasTic/buscar_incidencia",
+    data: formData,
+    options: Options(contentType: "multipart/form-data"));
+  }
 
 }

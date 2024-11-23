@@ -41,9 +41,7 @@ class _IncidenciasScreenState extends State<IncidenciasScreen> {
     email=FirebaseAuth.instance.currentUser?.email;
     email ??= "jesus27044@gmail.com";
     textControlerProfesor.text=email!;
-    if(email=="jesus27044@gmail.com"){
-      adminMode=true;
-    }
+    
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -54,15 +52,6 @@ class _IncidenciasScreenState extends State<IncidenciasScreen> {
             Navigator.pushNamed(context, "main_screen")
           },
         ),
-        actions: [
-          ElevatedButton(
-            child: 
-            const Text("Cambiar de modo"),
-            onPressed: () => adminMode = !adminMode,
-
-            )
-          
-        ],
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -262,13 +251,14 @@ class _IncidenciasScreenState extends State<IncidenciasScreen> {
               Center(
                 child: ElevatedButton.icon(
                   onPressed: () {
-                    provider.addIncidencia(
-                      IncidenciasEnviar(
+                    IncidenciasEnviar enviar= IncidenciasEnviar(
                         numeroAula: textControlerAula.text,
                         nombreProfesor: textControlerProfesor.text,
                         descripcionIncidencia: textControlerDesc.text,
                         fechaIncidencia: textControlerFecha.text,
-                      ),
+                      );
+                    provider.searchIncidencia(
+                      enviar,
                     );
                     textControlerDesc.clear();
                     textControlerProfesor.text=email!;
@@ -276,11 +266,11 @@ class _IncidenciasScreenState extends State<IncidenciasScreen> {
                     textControlerFecha.text =
                         DateFormat('yyyy-MM-dd').format(DateTime.now());
                     setState(() {
-                      _incidenciasFuture = provider.getIncidencias();
+                      _incidenciasFuture = provider.searchIncidencia(enviar);
                     });
                   },
                   icon: const Icon(Icons.send),
-                  label: const Text("Enviar"),
+                  label: const Text("Buscar"),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.red,
                     padding: const EdgeInsets.symmetric(

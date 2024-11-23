@@ -285,7 +285,7 @@ public class IncidenciasTicRestWeb
 		
 	}
 	
-	@RequestMapping(method = RequestMethod.POST)
+	@RequestMapping(method = RequestMethod.POST,value = "/buscar_incidencia")
 	public ResponseEntity<?> buscaIncidencia(@RequestBody FiltroBusqueda filtroBusqueda)
 	{
 		try
