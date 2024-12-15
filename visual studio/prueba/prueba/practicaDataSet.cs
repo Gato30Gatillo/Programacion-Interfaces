@@ -7,9 +7,12 @@
     }
 }
 
-namespace prueba.practicaDataSetTableAdapters {
-    
-    
+namespace prueba.practicaDataSetTableAdapters
+{
+    partial class NotasTableAdapter
+    {
+    }
+
     public partial class AlumnosTableAdapter {
     }
 }

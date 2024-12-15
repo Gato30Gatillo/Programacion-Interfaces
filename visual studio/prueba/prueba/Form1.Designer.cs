@@ -80,7 +80,7 @@
             this.panelNotas = new System.Windows.Forms.Panel();
             this.checkBoxTodos = new System.Windows.Forms.CheckBox();
             this.listBoxAlumnos = new System.Windows.Forms.ListBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewNotas = new System.Windows.Forms.DataGridView();
             this.idAlumnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idEvaluacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -120,7 +120,7 @@
             this.panelEvaluacionesModificar.SuspendLayout();
             this.panelEvaluacionesEliminar.SuspendLayout();
             this.panelNotas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNotas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.notasBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -562,7 +562,7 @@
             // 
             this.panelNotas.Controls.Add(this.checkBoxTodos);
             this.panelNotas.Controls.Add(this.listBoxAlumnos);
-            this.panelNotas.Controls.Add(this.dataGridView1);
+            this.panelNotas.Controls.Add(this.dataGridViewNotas);
             this.panelNotas.Controls.Add(this.comboBoxEvaluacionesId);
             this.panelNotas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelNotas.Location = new System.Drawing.Point(0, 0);
@@ -579,6 +579,7 @@
             this.checkBoxTodos.TabIndex = 3;
             this.checkBoxTodos.Text = "Todos?";
             this.checkBoxTodos.UseVisualStyleBackColor = true;
+            this.checkBoxTodos.CheckedChanged += new System.EventHandler(this.checkBoxTodos_CheckedChanged);
             // 
             // listBoxAlumnos
             // 
@@ -590,57 +591,53 @@
             this.listBoxAlumnos.Size = new System.Drawing.Size(400, 43);
             this.listBoxAlumnos.TabIndex = 2;
             this.listBoxAlumnos.ValueMember = "Id";
+            this.listBoxAlumnos.SelectedIndexChanged += new System.EventHandler(this.listBoxAlumnos_SelectedIndexChanged);
             // 
-            // dataGridView1
+            // dataGridViewNotas
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewNotas.AutoGenerateColumns = false;
+            this.dataGridViewNotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewNotas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idAlumnoDataGridViewTextBoxColumn,
             this.idEvaluacionDataGridViewTextBoxColumn,
             this.dIDataGridViewTextBoxColumn,
             this.pMDMDataGridViewTextBoxColumn,
             this.aDDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.notasBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(85, 139);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(640, 245);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridViewNotas.DataSource = this.notasBindingSource;
+            this.dataGridViewNotas.Location = new System.Drawing.Point(85, 139);
+            this.dataGridViewNotas.Name = "dataGridViewNotas";
+            this.dataGridViewNotas.Size = new System.Drawing.Size(640, 245);
+            this.dataGridViewNotas.TabIndex = 1;
             // 
             // idAlumnoDataGridViewTextBoxColumn
             // 
             this.idAlumnoDataGridViewTextBoxColumn.DataPropertyName = "Id_Alumno";
             this.idAlumnoDataGridViewTextBoxColumn.HeaderText = "Id_Alumno";
             this.idAlumnoDataGridViewTextBoxColumn.Name = "idAlumnoDataGridViewTextBoxColumn";
-            this.idAlumnoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // idEvaluacionDataGridViewTextBoxColumn
             // 
             this.idEvaluacionDataGridViewTextBoxColumn.DataPropertyName = "Id_Evaluacion";
             this.idEvaluacionDataGridViewTextBoxColumn.HeaderText = "Id_Evaluacion";
             this.idEvaluacionDataGridViewTextBoxColumn.Name = "idEvaluacionDataGridViewTextBoxColumn";
-            this.idEvaluacionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // dIDataGridViewTextBoxColumn
             // 
             this.dIDataGridViewTextBoxColumn.DataPropertyName = "DI";
             this.dIDataGridViewTextBoxColumn.HeaderText = "DI";
             this.dIDataGridViewTextBoxColumn.Name = "dIDataGridViewTextBoxColumn";
-            this.dIDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // pMDMDataGridViewTextBoxColumn
             // 
             this.pMDMDataGridViewTextBoxColumn.DataPropertyName = "PMDM";
             this.pMDMDataGridViewTextBoxColumn.HeaderText = "PMDM";
             this.pMDMDataGridViewTextBoxColumn.Name = "pMDMDataGridViewTextBoxColumn";
-            this.pMDMDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // aDDataGridViewTextBoxColumn
             // 
             this.aDDataGridViewTextBoxColumn.DataPropertyName = "AD";
             this.aDDataGridViewTextBoxColumn.HeaderText = "AD";
             this.aDDataGridViewTextBoxColumn.Name = "aDDataGridViewTextBoxColumn";
-            this.aDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // notasBindingSource
             // 
@@ -657,6 +654,7 @@
             this.comboBoxEvaluacionesId.Size = new System.Drawing.Size(214, 21);
             this.comboBoxEvaluacionesId.TabIndex = 0;
             this.comboBoxEvaluacionesId.ValueMember = "Id";
+            this.comboBoxEvaluacionesId.SelectedIndexChanged += new System.EventHandler(this.comboBoxEvaluacionesId_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
@@ -781,15 +779,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.panelNotas);
-            this.Controls.Add(this.panelEvaluacionesModificar);
-            this.Controls.Add(this.panelEvaluacionesEliminar);
-            this.Controls.Add(this.panelAlumnosEliminar);
-            this.Controls.Add(this.panelAlumnoModificar);
-            this.Controls.Add(this.panelEvaluacionesListar);
-            this.Controls.Add(this.panelEvaluacionesAlta);
             this.Controls.Add(this.panelAlumnoAlta);
             this.Controls.Add(this.panelAlumnoListar);
+            this.Controls.Add(this.panelAlumnoModificar);
+            this.Controls.Add(this.panelAlumnosEliminar);
+            this.Controls.Add(this.panelEvaluacionesAlta);
+            this.Controls.Add(this.panelEvaluacionesListar);
+            this.Controls.Add(this.panelEvaluacionesModificar);
+            this.Controls.Add(this.panelEvaluacionesEliminar);
+            this.Controls.Add(this.panelNotas);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -814,7 +812,7 @@
             this.panelEvaluacionesEliminar.ResumeLayout(false);
             this.panelNotas.ResumeLayout(false);
             this.panelNotas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNotas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.notasBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -889,7 +887,7 @@
         private practicaDataSetTableAdapters.EvaluacionesTableAdapter evaluacionesTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn evaluacionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewNotas;
         private System.Windows.Forms.ComboBox comboBoxEvaluacionesId;
         private System.Windows.Forms.BindingSource notasBindingSource;
         private practicaDataSetTableAdapters.NotasTableAdapter notasTableAdapter;

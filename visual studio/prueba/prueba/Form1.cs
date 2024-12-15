@@ -235,5 +235,83 @@ namespace prueba
         {
             textBoxModificarEvaluaciones.Text = comboBoxModificarEvaluaciones.Text.ToString();
         }
+
+        private void listBoxAlumnos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int idAlumnos = Convert.ToInt32(listBoxAlumnos.SelectedValue);
+            int idEvaluaciones = Convert.ToInt32(comboBoxEvaluacionesId.SelectedValue);
+            if (idEvaluaciones != null && idAlumnos != null)
+            {
+                practicaDataSet.NotasDataTable notasDataTable = new practicaDataSet.NotasDataTable();
+
+                notasTableAdapter.FillByAlumnos(notasDataTable, idAlumnos, idEvaluaciones);
+
+                dataGridViewNotas.DataSource = notasDataTable;
+            }
+        }
+
+        private void checkBoxTodos_CheckedChanged(object sender, EventArgs e)
+        {
+            int idEvaluaciones = Convert.ToInt32(comboBoxEvaluacionesId.SelectedValue);
+            if (idEvaluaciones != null)
+            {
+                practicaDataSet.NotasDataTable notasDataTable = new practicaDataSet.NotasDataTable();
+
+                notasTableAdapter.FillByEvaluacion(notasDataTable, idEvaluaciones);
+
+                dataGridViewNotas.DataSource = notasDataTable;
+            }
+            listBoxAlumnos.Enabled=!listBoxAlumnos.Enabled;
+        }
+
+        private void comboBoxEvaluacionesId_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBoxAlumnos.Enabled)
+            {
+                int idAlumnos = Convert.ToInt32(listBoxAlumnos.SelectedValue);
+                int idEvaluaciones = Convert.ToInt32(comboBoxEvaluacionesId.SelectedValue);
+                if (idEvaluaciones != null && idAlumnos != null)
+                {
+                    practicaDataSet.NotasDataTable notasDataTable = new practicaDataSet.NotasDataTable();
+
+                    notasTableAdapter.FillByAlumnos(notasDataTable,idAlumnos, idEvaluaciones);
+
+                    dataGridViewNotas.DataSource = notasDataTable;
+                }
+            }
+            else
+            {
+                int idEvaluaciones = Convert.ToInt32(comboBoxEvaluacionesId.SelectedValue);
+                if (idEvaluaciones != null)
+                {
+                    practicaDataSet.NotasDataTable notasDataTable = new practicaDataSet.NotasDataTable();
+
+                    notasTableAdapter.FillByEvaluacion(notasDataTable, idEvaluaciones);
+
+                    dataGridViewNotas.DataSource = notasDataTable;
+                }
+            }
+        }
+        private void dataGridViewNotas_RowValidated(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            if (dataGridViewNotas.DataSource is practicaDataSet.NotasDataTable notasDataTable)
+            {
+                DataRowView fila = (DataRowView)dataGridViewNotas.Rows[e.RowIndex].DataBoundItem;
+
+                if (fila != null && (fila.Row.RowState == DataRowState.Modified || fila.Row.RowState == DataRowState.Added))
+                {
+                    notasTableAdapter.Update(notasDataTable);
+                }
+            }
+        }
+        private void dataGridViewNotas_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
+        {
+            
+            int idAlumno = Convert.ToInt32(e.Row.Cells["idAlumnoDataGridViewTextBoxColumn"].Value);
+            int idEvaluacion = Convert.ToInt32(e.Row.Cells["idEvaluacionDataGridViewTextBoxColumn"].Value);
+
+            notasTableAdapter.DeleteNota(idAlumno, idEvaluacion);            
+        }
     }
 }

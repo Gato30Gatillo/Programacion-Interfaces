@@ -226,7 +226,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="practica.accdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
