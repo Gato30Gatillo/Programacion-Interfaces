@@ -40,10 +40,6 @@
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.panelAlumnoListar = new System.Windows.Forms.Panel();
             this.dataGridViewListarAlumno = new System.Windows.Forms.DataGridView();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.apellidosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nIFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bajaDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.alumnosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.practicaDataSet = new prueba.practicaDataSet();
             this.panelAlumnoModificar = new System.Windows.Forms.Panel();
@@ -104,6 +100,18 @@
             this.alumnosTableAdapter = new prueba.practicaDataSetTableAdapters.AlumnosTableAdapter();
             this.evaluacionesTableAdapter = new prueba.practicaDataSetTableAdapters.EvaluacionesTableAdapter();
             this.notasTableAdapter = new prueba.practicaDataSetTableAdapters.NotasTableAdapter();
+            this.labelAltaDescripcion = new System.Windows.Forms.Label();
+            this.labelModificarDescripcion = new System.Windows.Forms.Label();
+            this.labelModificarNuevaDescripcion = new System.Windows.Forms.Label();
+            this.labelEliminarDescripcion = new System.Windows.Forms.Label();
+            this.labelNotasAlumno = new System.Windows.Forms.Label();
+            this.labelNotasEvaluacion = new System.Windows.Forms.Label();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nIFDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bajaDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.labelAltaAlumno = new System.Windows.Forms.Label();
             this.panelAlumnoAlta.SuspendLayout();
             this.panelAlumnoListar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListarAlumno)).BeginInit();
@@ -127,6 +135,7 @@
             // 
             // panelAlumnoAlta
             // 
+            this.panelAlumnoAlta.Controls.Add(this.labelAltaAlumno);
             this.panelAlumnoAlta.Controls.Add(this.labelNif);
             this.panelAlumnoAlta.Controls.Add(this.labelApellidos);
             this.panelAlumnoAlta.Controls.Add(this.labelNombre);
@@ -144,7 +153,7 @@
             // labelNif
             // 
             this.labelNif.AutoSize = true;
-            this.labelNif.Location = new System.Drawing.Point(77, 155);
+            this.labelNif.Location = new System.Drawing.Point(260, 213);
             this.labelNif.Name = "labelNif";
             this.labelNif.Size = new System.Drawing.Size(20, 13);
             this.labelNif.TabIndex = 7;
@@ -153,7 +162,7 @@
             // labelApellidos
             // 
             this.labelApellidos.AutoSize = true;
-            this.labelApellidos.Location = new System.Drawing.Point(77, 118);
+            this.labelApellidos.Location = new System.Drawing.Point(260, 176);
             this.labelApellidos.Name = "labelApellidos";
             this.labelApellidos.Size = new System.Drawing.Size(49, 13);
             this.labelApellidos.TabIndex = 6;
@@ -162,7 +171,7 @@
             // labelNombre
             // 
             this.labelNombre.AutoSize = true;
-            this.labelNombre.Location = new System.Drawing.Point(77, 79);
+            this.labelNombre.Location = new System.Drawing.Point(260, 137);
             this.labelNombre.Name = "labelNombre";
             this.labelNombre.Size = new System.Drawing.Size(44, 13);
             this.labelNombre.TabIndex = 5;
@@ -170,7 +179,7 @@
             // 
             // buttonGuardar
             // 
-            this.buttonGuardar.Location = new System.Drawing.Point(127, 228);
+            this.buttonGuardar.Location = new System.Drawing.Point(310, 286);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(100, 23);
             this.buttonGuardar.TabIndex = 4;
@@ -181,7 +190,7 @@
             // checkBoxBaja
             // 
             this.checkBoxBaja.AutoSize = true;
-            this.checkBoxBaja.Location = new System.Drawing.Point(128, 196);
+            this.checkBoxBaja.Location = new System.Drawing.Point(311, 254);
             this.checkBoxBaja.Name = "checkBoxBaja";
             this.checkBoxBaja.Size = new System.Drawing.Size(50, 17);
             this.checkBoxBaja.TabIndex = 3;
@@ -190,21 +199,21 @@
             // 
             // textBoxNif
             // 
-            this.textBoxNif.Location = new System.Drawing.Point(127, 155);
+            this.textBoxNif.Location = new System.Drawing.Point(310, 213);
             this.textBoxNif.Name = "textBoxNif";
             this.textBoxNif.Size = new System.Drawing.Size(100, 20);
             this.textBoxNif.TabIndex = 2;
             // 
             // textBoxApellido
             // 
-            this.textBoxApellido.Location = new System.Drawing.Point(127, 115);
+            this.textBoxApellido.Location = new System.Drawing.Point(310, 173);
             this.textBoxApellido.Name = "textBoxApellido";
             this.textBoxApellido.Size = new System.Drawing.Size(100, 20);
             this.textBoxApellido.TabIndex = 1;
             // 
             // textBoxNombre
             // 
-            this.textBoxNombre.Location = new System.Drawing.Point(127, 76);
+            this.textBoxNombre.Location = new System.Drawing.Point(310, 134);
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.Size = new System.Drawing.Size(100, 20);
             this.textBoxNombre.TabIndex = 0;
@@ -225,6 +234,7 @@
             this.dataGridViewListarAlumno.AutoGenerateColumns = false;
             this.dataGridViewListarAlumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewListarAlumno.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.nombreDataGridViewTextBoxColumn,
             this.apellidosDataGridViewTextBoxColumn,
             this.nIFDataGridViewTextBoxColumn,
@@ -233,36 +243,8 @@
             this.dataGridViewListarAlumno.Location = new System.Drawing.Point(133, 95);
             this.dataGridViewListarAlumno.Name = "dataGridViewListarAlumno";
             this.dataGridViewListarAlumno.ReadOnly = true;
-            this.dataGridViewListarAlumno.Size = new System.Drawing.Size(443, 244);
+            this.dataGridViewListarAlumno.Size = new System.Drawing.Size(548, 290);
             this.dataGridViewListarAlumno.TabIndex = 0;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // apellidosDataGridViewTextBoxColumn
-            // 
-            this.apellidosDataGridViewTextBoxColumn.DataPropertyName = "Apellidos";
-            this.apellidosDataGridViewTextBoxColumn.HeaderText = "Apellidos";
-            this.apellidosDataGridViewTextBoxColumn.Name = "apellidosDataGridViewTextBoxColumn";
-            this.apellidosDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nIFDataGridViewTextBoxColumn
-            // 
-            this.nIFDataGridViewTextBoxColumn.DataPropertyName = "NIF";
-            this.nIFDataGridViewTextBoxColumn.HeaderText = "NIF";
-            this.nIFDataGridViewTextBoxColumn.Name = "nIFDataGridViewTextBoxColumn";
-            this.nIFDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bajaDataGridViewCheckBoxColumn
-            // 
-            this.bajaDataGridViewCheckBoxColumn.DataPropertyName = "baja";
-            this.bajaDataGridViewCheckBoxColumn.HeaderText = "baja";
-            this.bajaDataGridViewCheckBoxColumn.Name = "bajaDataGridViewCheckBoxColumn";
-            this.bajaDataGridViewCheckBoxColumn.ReadOnly = true;
             // 
             // alumnosBindingSource
             // 
@@ -418,6 +400,7 @@
             // 
             // panelEvaluacionesAlta
             // 
+            this.panelEvaluacionesAlta.Controls.Add(this.labelAltaDescripcion);
             this.panelEvaluacionesAlta.Controls.Add(this.textBoxDescripcion);
             this.panelEvaluacionesAlta.Controls.Add(this.buttonAltaEvaluaciones);
             this.panelEvaluacionesAlta.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -462,10 +445,10 @@
             this.idDataGridViewTextBoxColumn2,
             this.evaluacionDataGridViewTextBoxColumn});
             this.dataGridViewListarEvaluaciones.DataSource = this.evaluacionesBindingSource;
-            this.dataGridViewListarEvaluaciones.Location = new System.Drawing.Point(130, 89);
+            this.dataGridViewListarEvaluaciones.Location = new System.Drawing.Point(263, 66);
             this.dataGridViewListarEvaluaciones.Name = "dataGridViewListarEvaluaciones";
             this.dataGridViewListarEvaluaciones.ReadOnly = true;
-            this.dataGridViewListarEvaluaciones.Size = new System.Drawing.Size(558, 279);
+            this.dataGridViewListarEvaluaciones.Size = new System.Drawing.Size(246, 319);
             this.dataGridViewListarEvaluaciones.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn2
@@ -489,6 +472,8 @@
             // 
             // panelEvaluacionesModificar
             // 
+            this.panelEvaluacionesModificar.Controls.Add(this.labelModificarNuevaDescripcion);
+            this.panelEvaluacionesModificar.Controls.Add(this.labelModificarDescripcion);
             this.panelEvaluacionesModificar.Controls.Add(this.textBoxModificarEvaluaciones);
             this.panelEvaluacionesModificar.Controls.Add(this.buttonModificarEvaluaciones);
             this.panelEvaluacionesModificar.Controls.Add(this.comboBoxModificarEvaluaciones);
@@ -500,14 +485,14 @@
             // 
             // textBoxModificarEvaluaciones
             // 
-            this.textBoxModificarEvaluaciones.Location = new System.Drawing.Point(132, 162);
+            this.textBoxModificarEvaluaciones.Location = new System.Drawing.Point(296, 216);
             this.textBoxModificarEvaluaciones.Name = "textBoxModificarEvaluaciones";
             this.textBoxModificarEvaluaciones.Size = new System.Drawing.Size(131, 20);
             this.textBoxModificarEvaluaciones.TabIndex = 2;
             // 
             // buttonModificarEvaluaciones
             // 
-            this.buttonModificarEvaluaciones.Location = new System.Drawing.Point(136, 226);
+            this.buttonModificarEvaluaciones.Location = new System.Drawing.Point(300, 280);
             this.buttonModificarEvaluaciones.Name = "buttonModificarEvaluaciones";
             this.buttonModificarEvaluaciones.Size = new System.Drawing.Size(109, 40);
             this.buttonModificarEvaluaciones.TabIndex = 1;
@@ -520,7 +505,7 @@
             this.comboBoxModificarEvaluaciones.DataSource = this.evaluacionesBindingSource;
             this.comboBoxModificarEvaluaciones.DisplayMember = "Evaluacion";
             this.comboBoxModificarEvaluaciones.FormattingEnabled = true;
-            this.comboBoxModificarEvaluaciones.Location = new System.Drawing.Point(135, 86);
+            this.comboBoxModificarEvaluaciones.Location = new System.Drawing.Point(299, 140);
             this.comboBoxModificarEvaluaciones.Name = "comboBoxModificarEvaluaciones";
             this.comboBoxModificarEvaluaciones.Size = new System.Drawing.Size(111, 21);
             this.comboBoxModificarEvaluaciones.TabIndex = 0;
@@ -529,6 +514,7 @@
             // 
             // panelEvaluacionesEliminar
             // 
+            this.panelEvaluacionesEliminar.Controls.Add(this.labelEliminarDescripcion);
             this.panelEvaluacionesEliminar.Controls.Add(this.buttonEliminarEvaluaciones);
             this.panelEvaluacionesEliminar.Controls.Add(this.comboBoxEliminarEvaluaciones);
             this.panelEvaluacionesEliminar.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -539,11 +525,11 @@
             // 
             // buttonEliminarEvaluaciones
             // 
-            this.buttonEliminarEvaluaciones.Location = new System.Drawing.Point(173, 173);
+            this.buttonEliminarEvaluaciones.Location = new System.Drawing.Point(298, 264);
             this.buttonEliminarEvaluaciones.Name = "buttonEliminarEvaluaciones";
             this.buttonEliminarEvaluaciones.Size = new System.Drawing.Size(187, 75);
             this.buttonEliminarEvaluaciones.TabIndex = 1;
-            this.buttonEliminarEvaluaciones.Text = "Guardar";
+            this.buttonEliminarEvaluaciones.Text = "Eliminar";
             this.buttonEliminarEvaluaciones.UseVisualStyleBackColor = true;
             this.buttonEliminarEvaluaciones.Click += new System.EventHandler(this.buttonEliminarEvaluaciones_Click);
             // 
@@ -552,7 +538,7 @@
             this.comboBoxEliminarEvaluaciones.DataSource = this.evaluacionesBindingSource;
             this.comboBoxEliminarEvaluaciones.DisplayMember = "Evaluacion";
             this.comboBoxEliminarEvaluaciones.FormattingEnabled = true;
-            this.comboBoxEliminarEvaluaciones.Location = new System.Drawing.Point(172, 124);
+            this.comboBoxEliminarEvaluaciones.Location = new System.Drawing.Point(298, 210);
             this.comboBoxEliminarEvaluaciones.Name = "comboBoxEliminarEvaluaciones";
             this.comboBoxEliminarEvaluaciones.Size = new System.Drawing.Size(189, 21);
             this.comboBoxEliminarEvaluaciones.TabIndex = 0;
@@ -560,6 +546,8 @@
             // 
             // panelNotas
             // 
+            this.panelNotas.Controls.Add(this.labelNotasEvaluacion);
+            this.panelNotas.Controls.Add(this.labelNotasAlumno);
             this.panelNotas.Controls.Add(this.checkBoxTodos);
             this.panelNotas.Controls.Add(this.listBoxAlumnos);
             this.panelNotas.Controls.Add(this.dataGridViewNotas);
@@ -604,9 +592,9 @@
             this.pMDMDataGridViewTextBoxColumn,
             this.aDDataGridViewTextBoxColumn});
             this.dataGridViewNotas.DataSource = this.notasBindingSource;
-            this.dataGridViewNotas.Location = new System.Drawing.Point(85, 139);
+            this.dataGridViewNotas.Location = new System.Drawing.Point(128, 162);
             this.dataGridViewNotas.Name = "dataGridViewNotas";
-            this.dataGridViewNotas.Size = new System.Drawing.Size(640, 245);
+            this.dataGridViewNotas.Size = new System.Drawing.Size(544, 258);
             this.dataGridViewNotas.TabIndex = 1;
             // 
             // idAlumnoDataGridViewTextBoxColumn
@@ -649,7 +637,7 @@
             this.comboBoxEvaluacionesId.DataSource = this.evaluacionesBindingSource;
             this.comboBoxEvaluacionesId.DisplayMember = "Evaluacion";
             this.comboBoxEvaluacionesId.FormattingEnabled = true;
-            this.comboBoxEvaluacionesId.Location = new System.Drawing.Point(512, 64);
+            this.comboBoxEvaluacionesId.Location = new System.Drawing.Point(511, 79);
             this.comboBoxEvaluacionesId.Name = "comboBoxEvaluacionesId";
             this.comboBoxEvaluacionesId.Size = new System.Drawing.Size(214, 21);
             this.comboBoxEvaluacionesId.TabIndex = 0;
@@ -682,28 +670,28 @@
             // altaToolStripMenuItem
             // 
             this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
-            this.altaToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.altaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.altaToolStripMenuItem.Text = "Alta";
             this.altaToolStripMenuItem.Click += new System.EventHandler(this.altaToolStripMenuItem_Click);
             // 
             // listarToolStripMenuItem
             // 
             this.listarToolStripMenuItem.Name = "listarToolStripMenuItem";
-            this.listarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.listarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listarToolStripMenuItem.Text = "Listar";
             this.listarToolStripMenuItem.Click += new System.EventHandler(this.listarToolStripMenuItem_Click);
             // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.modificarToolStripMenuItem.Text = "Modificar";
             this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
@@ -773,6 +761,104 @@
             // 
             this.notasTableAdapter.ClearBeforeFill = true;
             // 
+            // labelAltaDescripcion
+            // 
+            this.labelAltaDescripcion.AutoSize = true;
+            this.labelAltaDescripcion.Location = new System.Drawing.Point(333, 143);
+            this.labelAltaDescripcion.Name = "labelAltaDescripcion";
+            this.labelAltaDescripcion.Size = new System.Drawing.Size(94, 13);
+            this.labelAltaDescripcion.TabIndex = 2;
+            this.labelAltaDescripcion.Text = "Nueva evaluacion";
+            // 
+            // labelModificarDescripcion
+            // 
+            this.labelModificarDescripcion.AutoSize = true;
+            this.labelModificarDescripcion.Location = new System.Drawing.Point(299, 118);
+            this.labelModificarDescripcion.Name = "labelModificarDescripcion";
+            this.labelModificarDescripcion.Size = new System.Drawing.Size(151, 13);
+            this.labelModificarDescripcion.TabIndex = 3;
+            this.labelModificarDescripcion.Text = "Elige que evaluacion modificar";
+            // 
+            // labelModificarNuevaDescripcion
+            // 
+            this.labelModificarNuevaDescripcion.AutoSize = true;
+            this.labelModificarNuevaDescripcion.Location = new System.Drawing.Point(296, 193);
+            this.labelModificarNuevaDescripcion.Name = "labelModificarNuevaDescripcion";
+            this.labelModificarNuevaDescripcion.Size = new System.Drawing.Size(96, 13);
+            this.labelModificarNuevaDescripcion.TabIndex = 4;
+            this.labelModificarNuevaDescripcion.Text = "Nueva descripción";
+            // 
+            // labelEliminarDescripcion
+            // 
+            this.labelEliminarDescripcion.AutoSize = true;
+            this.labelEliminarDescripcion.Location = new System.Drawing.Point(299, 179);
+            this.labelEliminarDescripcion.Name = "labelEliminarDescripcion";
+            this.labelEliminarDescripcion.Size = new System.Drawing.Size(146, 13);
+            this.labelEliminarDescripcion.TabIndex = 2;
+            this.labelEliminarDescripcion.Text = "Elige que Evaluacion Eliminar";
+            // 
+            // labelNotasAlumno
+            // 
+            this.labelNotasAlumno.AutoSize = true;
+            this.labelNotasAlumno.Location = new System.Drawing.Point(85, 34);
+            this.labelNotasAlumno.Name = "labelNotasAlumno";
+            this.labelNotasAlumno.Size = new System.Drawing.Size(47, 13);
+            this.labelNotasAlumno.TabIndex = 4;
+            this.labelNotasAlumno.Text = "Alumnos";
+            // 
+            // labelNotasEvaluacion
+            // 
+            this.labelNotasEvaluacion.AutoSize = true;
+            this.labelNotasEvaluacion.Location = new System.Drawing.Point(511, 52);
+            this.labelNotasEvaluacion.Name = "labelNotasEvaluacion";
+            this.labelNotasEvaluacion.Size = new System.Drawing.Size(71, 13);
+            this.labelNotasEvaluacion.TabIndex = 5;
+            this.labelNotasEvaluacion.Text = "Evaluaciones";
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // apellidosDataGridViewTextBoxColumn
+            // 
+            this.apellidosDataGridViewTextBoxColumn.DataPropertyName = "Apellidos";
+            this.apellidosDataGridViewTextBoxColumn.HeaderText = "Apellidos";
+            this.apellidosDataGridViewTextBoxColumn.Name = "apellidosDataGridViewTextBoxColumn";
+            this.apellidosDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nIFDataGridViewTextBoxColumn
+            // 
+            this.nIFDataGridViewTextBoxColumn.DataPropertyName = "NIF";
+            this.nIFDataGridViewTextBoxColumn.HeaderText = "NIF";
+            this.nIFDataGridViewTextBoxColumn.Name = "nIFDataGridViewTextBoxColumn";
+            this.nIFDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bajaDataGridViewCheckBoxColumn
+            // 
+            this.bajaDataGridViewCheckBoxColumn.DataPropertyName = "baja";
+            this.bajaDataGridViewCheckBoxColumn.HeaderText = "baja";
+            this.bajaDataGridViewCheckBoxColumn.Name = "bajaDataGridViewCheckBoxColumn";
+            this.bajaDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // labelAltaAlumno
+            // 
+            this.labelAltaAlumno.AutoSize = true;
+            this.labelAltaAlumno.Location = new System.Drawing.Point(315, 95);
+            this.labelAltaAlumno.Name = "labelAltaAlumno";
+            this.labelAltaAlumno.Size = new System.Drawing.Size(77, 13);
+            this.labelAltaAlumno.TabIndex = 8;
+            this.labelAltaAlumno.Text = "Nuevo Alumno";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -810,6 +896,7 @@
             this.panelEvaluacionesModificar.ResumeLayout(false);
             this.panelEvaluacionesModificar.PerformLayout();
             this.panelEvaluacionesEliminar.ResumeLayout(false);
+            this.panelEvaluacionesEliminar.PerformLayout();
             this.panelNotas.ResumeLayout(false);
             this.panelNotas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNotas)).EndInit();
@@ -869,10 +956,6 @@
         private practicaDataSet practicaDataSet;
         private System.Windows.Forms.BindingSource alumnosBindingSource;
         private practicaDataSetTableAdapters.AlumnosTableAdapter alumnosTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellidosDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nIFDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn bajaDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellidosDataGridViewTextBoxColumn1;
@@ -898,6 +981,18 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn aDDataGridViewTextBoxColumn;
         private System.Windows.Forms.CheckBox checkBoxTodos;
         private System.Windows.Forms.ListBox listBoxAlumnos;
+        private System.Windows.Forms.Label labelAltaDescripcion;
+        private System.Windows.Forms.Label labelModificarNuevaDescripcion;
+        private System.Windows.Forms.Label labelModificarDescripcion;
+        private System.Windows.Forms.Label labelEliminarDescripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellidosDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nIFDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn bajaDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.Label labelNotasEvaluacion;
+        private System.Windows.Forms.Label labelNotasAlumno;
+        private System.Windows.Forms.Label labelAltaAlumno;
     }
 }
 
