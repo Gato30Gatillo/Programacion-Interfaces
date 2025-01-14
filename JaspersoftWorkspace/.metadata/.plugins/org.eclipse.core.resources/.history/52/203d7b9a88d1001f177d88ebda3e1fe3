@@ -1,0 +1,22 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Blank_A4_1" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fb5feb81-d5bf-42b4-929a-f13587e9fcbb">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value="Ik9SREVSUyIgQVMgLDM1LDMzLGFmMjI5NGE0LTI0ZjgtNDAzMC1hM2IyLWQyMTEyZDIzNDBjMzs="/>
+	<query language="sql"><![CDATA[SELECT distinct "SHIPCITY"
+FROM "ORDERS"]]></query>
+	<field name="SHIPCITY" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SHIPCITY"/>
+		<property name="com.jaspersoft.studio.field.label" value="SHIPCITY"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<sortField name="SHIPCITY"/>
+	<background splitType="Stretch"/>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<element kind="textField" uuid="0a5ee2d9-818c-461f-bd60-b5ed592c77a8" x="0" y="0" width="555" height="20">
+				<expression><![CDATA[$F{SHIPCITY}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="16b62f1d-b936-41ae-86d9-41895f6526bd"/>
+			</element>
+		</band>
+	</detail>
+</jasperReport>
