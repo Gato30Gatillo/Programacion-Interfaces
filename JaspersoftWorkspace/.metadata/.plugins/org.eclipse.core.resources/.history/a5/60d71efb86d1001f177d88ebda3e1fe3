@@ -1,0 +1,49 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Blank_A4_2" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="aa704db3-8db8-4317-9932-2984eba5fa7e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<query language="sql"><![CDATA[SELECT
+     count(ORDERS."ORDERID") AS NPedidos,
+     ORDERS."SHIPCOUNTRY" AS Pais
+FROM
+     "PUBLIC"."ORDERS" ORDERS
+GROUP BY ORDERS."SHIPCOUNTRY"
+]]></query>
+	<field name="NPEDIDOS" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="NPEDIDOS"/>
+		<property name="com.jaspersoft.studio.field.label" value="NPEDIDOS"/>
+	</field>
+	<field name="PAIS" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SHIPCOUNTRY"/>
+		<property name="com.jaspersoft.studio.field.label" value="PAIS"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ORDERS"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch"/>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="30" splitType="Stretch">
+		<element kind="staticText" uuid="c1aa390d-5074-426b-ac81-12b35f12484e" x="52" y="0" width="100" height="30">
+			<text><![CDATA[NPEDIDOS]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6c9c21a6-42ca-4bb1-bf82-200a26187f50"/>
+		</element>
+		<element kind="staticText" uuid="9eef9ad8-fcb9-40af-803d-252ebffb4fe6" x="449" y="0" width="100" height="30">
+			<text><![CDATA[PAIS]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ce54676b-8e8a-415a-9542-22d499dfe4eb"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="60" splitType="Stretch">
+			<element kind="textField" uuid="01f7f335-ae6b-4ec9-a73c-30242823df75" x="52" y="30" width="100" height="30">
+				<expression><![CDATA[$F{NPEDIDOS}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6c9c21a6-42ca-4bb1-bf82-200a26187f50"/>
+			</element>
+			<element kind="textField" uuid="e92454bb-72ab-4367-aeb9-9879d3fe525e" x="450" y="30" width="100" height="30">
+				<expression><![CDATA[$F{PAIS}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ce54676b-8e8a-415a-9542-22d499dfe4eb"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
