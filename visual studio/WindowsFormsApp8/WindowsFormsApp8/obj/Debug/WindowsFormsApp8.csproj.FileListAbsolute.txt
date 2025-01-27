@@ -1,0 +1,22 @@
+C:\Users\usuario\source\repos\WindowsFormsApp8\WindowsFormsApp8\bin\Debug\centros_departamentos.accdb
+C:\Users\usuario\source\repos\WindowsFormsApp8\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.exe.config
+C:\Users\usuario\source\repos\WindowsFormsApp8\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.exe
+C:\Users\usuario\source\repos\WindowsFormsApp8\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.pdb
+C:\Users\usuario\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csproj.AssemblyReference.cache
+C:\Users\usuario\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Form1.resources
+C:\Users\usuario\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Properties.Resources.resources
+C:\Users\usuario\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csproj.GenerateResource.cache
+C:\Users\usuario\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csproj.CoreCompileInputs.cache
+C:\Users\usuario\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.exe
+C:\Users\usuario\source\repos\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.pdb
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\WindowsFormsApp8\WindowsFormsApp8\bin\Debug\centros_departamentos.accdb
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\WindowsFormsApp8\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.exe.config
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\WindowsFormsApp8\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.exe
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\WindowsFormsApp8\WindowsFormsApp8\bin\Debug\WindowsFormsApp8.pdb
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Form1.resources
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.exe
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\WindowsFormsApp8\WindowsFormsApp8\obj\Debug\WindowsFormsApp8.pdb

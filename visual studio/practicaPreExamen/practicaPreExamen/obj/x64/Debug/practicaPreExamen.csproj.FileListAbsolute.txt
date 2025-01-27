@@ -1,0 +1,164 @@
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\centros_departamentos.accdb
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\practicaPreExamen.exe.config
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\practicaPreExamen.exe
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\practicaPreExamen.pdb
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Azure.Core.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Azure.Identity.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Identity.Client.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Buffers.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.ClientModel.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.IO.FileSystem.AccessControl.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Memory.Data.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Memory.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Numerics.Vectors.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.AccessControl.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.Permissions.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.Principal.Windows.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Text.Encodings.Web.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Text.Json.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.ValueTuple.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Azure.Core.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Azure.Identity.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Data.SqlClient.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Identity.Client.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Protocols.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Buffers.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.ClientModel.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Memory.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Memory.Data.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Numerics.Vectors.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.AccessControl.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.Permissions.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.Principal.Windows.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Text.Encodings.Web.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Text.Json.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.ValueTuple.xml
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\bin\x64\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.csproj.AssemblyReference.cache
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.Form1.resources
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.Properties.Resources.resources
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.csproj.GenerateResource.cache
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.csproj.CoreCompileInputs.cache
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practica.6EFCCED7.Up2Date
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.exe
+C:\Users\Jaydee\Desktop\ejercicios\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.pdb
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\centros_departamentos.accdb
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\practicaPreExamen.exe.config
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\practicaPreExamen.exe
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\practicaPreExamen.pdb
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Azure.Core.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Azure.Identity.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Identity.Client.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Logging.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Buffers.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.ClientModel.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.IO.FileSystem.AccessControl.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Memory.Data.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Memory.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Numerics.Vectors.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.AccessControl.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.Permissions.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.Principal.Windows.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Text.Encodings.Web.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Text.Json.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.ValueTuple.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Azure.Core.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Azure.Identity.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Data.SqlClient.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Identity.Client.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Abstractions.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Logging.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Protocols.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Buffers.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.ClientModel.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.IO.FileSystem.AccessControl.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Memory.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Memory.Data.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Numerics.Vectors.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.AccessControl.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.Cryptography.ProtectedData.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.Permissions.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Security.Principal.Windows.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Text.Encodings.Web.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Text.Json.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\System.ValueTuple.xml
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\bin\x64\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.Form1.resources
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practica.6EFCCED7.Up2Date
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.exe
+C:\Users\Usuario\Desktop\Instituto\2º\Programacion-Interfaces\visual studio\practicaPreExamen\practicaPreExamen\obj\x64\Debug\practicaPreExamen.pdb

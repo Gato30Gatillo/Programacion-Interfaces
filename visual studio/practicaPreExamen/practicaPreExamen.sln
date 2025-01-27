@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "practicaPreExamen", "practicaPreExamen\practicaPreExamen.csproj", "{EDAAE7DE-C459-402B-95ED-E47CDF379765}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		ekisde|Any CPU = ekisde|Any CPU
+		ekisde|x64 = ekisde|x64
+		mio|Any CPU = mio|Any CPU
+		mio|x64 = mio|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.Debug|x64.ActiveCfg = Debug|x64
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.Debug|x64.Build.0 = Debug|x64
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.ekisde|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.ekisde|Any CPU.Build.0 = Debug|Any CPU
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.ekisde|x64.ActiveCfg = ekisde|x64
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.ekisde|x64.Build.0 = ekisde|x64
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.mio|Any CPU.ActiveCfg = mio|Any CPU
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.mio|Any CPU.Build.0 = mio|Any CPU
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.mio|x64.ActiveCfg = mio|x64
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.mio|x64.Build.0 = mio|x64
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.Release|x64.ActiveCfg = Release|x64
+		{EDAAE7DE-C459-402B-95ED-E47CDF379765}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

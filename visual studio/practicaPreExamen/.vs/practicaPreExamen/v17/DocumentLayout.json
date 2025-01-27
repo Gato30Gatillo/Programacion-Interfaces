@@ -1,0 +1,82 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\practicaPreExamen\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAAE7DE-C459-402B-95ED-E47CDF379765}|practicaPreExamen\\practicaPreExamen.csproj|c:\\users\\usuario\\desktop\\instituto\\2\u00BA\\programacion-interfaces\\visual studio\\practicapreexamen\\practicapreexamen\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAAE7DE-C459-402B-95ED-E47CDF379765}|practicaPreExamen\\practicaPreExamen.csproj|solutionrelative:practicapreexamen\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAAE7DE-C459-402B-95ED-E47CDF379765}|practicaPreExamen\\practicaPreExamen.csproj|C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\practicaPreExamen\\practicapreexamen\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAAE7DE-C459-402B-95ED-E47CDF379765}|practicaPreExamen\\practicaPreExamen.csproj|solutionrelative:practicapreexamen\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAAE7DE-C459-402B-95ED-E47CDF379765}|practicaPreExamen\\practicaPreExamen.csproj|C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\practicaPreExamen\\practicapreexamen\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EDAAE7DE-C459-402B-95ED-E47CDF379765}|practicaPreExamen\\practicaPreExamen.csproj|solutionrelative:practicapreexamen\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|practicaPreExamen||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "practicaPreExamen",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\practicaPreExamen\\practicaPreExamen\\practicaPreExamen.csproj",
+              "RelativeDocumentMoniker": "practicaPreExamen\\practicaPreExamen.csproj",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\practicaPreExamen\\practicaPreExamen\\practicaPreExamen.csproj",
+              "RelativeToolTip": "practicaPreExamen\\practicaPreExamen.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-01-25T17:22:22.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\practicaPreExamen\\practicaPreExamen\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "practicaPreExamen\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\practicaPreExamen\\practicaPreExamen\\Form1.Designer.cs",
+              "RelativeToolTip": "practicaPreExamen\\Form1.Designer.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAKAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T12:37:19.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\practicaPreExamen\\practicaPreExamen\\Form1.cs",
+              "RelativeDocumentMoniker": "practicaPreExamen\\Form1.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\practicaPreExamen\\practicaPreExamen\\Form1.cs",
+              "RelativeToolTip": "practicaPreExamen\\Form1.cs",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAswCsBAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T12:36:42.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\practicaPreExamen\\practicaPreExamen\\Form1.cs",
+              "RelativeDocumentMoniker": "practicaPreExamen\\Form1.cs",
+              "ToolTip": "C:\\Users\\Jaydee\\Desktop\\ejercicios\\practicaPreExamen\\practicaPreExamen\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Jaydee\\Desktop\\ejercicios\\practicaPreExamen\\practicaPreExamen\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-25T12:32:09.74Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
