@@ -3,30 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\2DAM-protegido\\Desktop\\desarrollo de interfaces\\visual studio\\prueba\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\prueba\\prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|c:\\users\\2dam-protegido\\desktop\\desarrollo de interfaces\\visual studio\\prueba\\prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|solutionrelative:prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\prueba\\prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|solutionrelative:prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\prueba\\prueba\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|solutionrelative:prueba\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|c:\\users\\usuario\\desktop\\instituto\\2\u00BA\\programacion-interfaces\\visual studio\\prueba\\prueba\\practicadataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
-      "RelativeMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|solutionrelative:prueba\\practicadataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\prueba\\prueba\\practicadataset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-=======
-      "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|C:\\Users\\2DAM-protegido\\Desktop\\desarrollo de interfaces\\visual studio\\prueba\\prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|solutionrelative:prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|c:\\users\\2dam-protegido\\desktop\\desarrollo de interfaces\\visual studio\\prueba\\prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|C:\\Users\\2DAM-protegido\\Desktop\\desarrollo de interfaces\\visual studio\\prueba\\prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|solutionrelative:prueba\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -38,16 +19,11 @@
       "RelativeMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|solutionrelative:prueba\\practicadataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|C:\\Users\\2DAM-protegido\\Desktop\\desarrollo de interfaces\\visual studio\\prueba\\prueba\\practicadataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|solutionrelative:prueba\\practicadataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|C:\\Users\\2DAM-protegido\\Desktop\\desarrollo de interfaces\\visual studio\\prueba\\prueba\\practicadataset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
->>>>>>> b5737c38a257ca9c11e62cd94da15c3b7ec85b58
       "RelativeMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|solutionrelative:prueba\\practicadataset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\prueba\\prueba\\practicadataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|C:\\Users\\2DAM-protegido\\Desktop\\desarrollo de interfaces\\visual studio\\prueba\\prueba\\practicadataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AA00D8D-861D-4611-ADCE-F43776C9250E}|prueba\\prueba.csproj|solutionrelative:prueba\\practicadataset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -70,7 +46,7 @@
               "RelativeToolTip": "prueba\\practicaDataSet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T11:31:11.847Z",
+              "WhenOpened": "2025-01-28T07:02:16.728Z",
               "EditorCaption": ""
             },
             {
@@ -83,7 +59,7 @@
               "RelativeToolTip": "prueba\\practicaDataSet.Designer.cs",
               "ViewState": "AgIAAHMIAAAAAAAAAAAUwAQJAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T15:25:25.258Z",
+              "WhenOpened": "2025-01-28T07:02:16.874Z",
               "EditorCaption": ""
             },
             {
@@ -95,7 +71,7 @@
               "ToolTip": "C:\\Users\\2DAM-protegido\\Desktop\\desarrollo de interfaces\\visual studio\\prueba\\prueba\\practicaDataSet.xsd",
               "RelativeToolTip": "prueba\\practicaDataSet.xsd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2024-12-12T18:32:16.812Z",
+              "WhenOpened": "2025-01-28T07:02:16.876Z",
               "EditorCaption": ""
             },
             {
@@ -106,13 +82,9 @@
               "RelativeDocumentMoniker": "prueba\\Form1.cs",
               "ToolTip": "C:\\Users\\2DAM-protegido\\Desktop\\desarrollo de interfaces\\visual studio\\prueba\\prueba\\Form1.cs",
               "RelativeToolTip": "prueba\\Form1.cs",
-<<<<<<< HEAD
-              "ViewState": "AgIAAI8AAAAAAAAAAAAUwKsAAAAYAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAAYBAAAAAAAAAAAwwD0BAAAAAAAAAAAAAA==",
->>>>>>> b5737c38a257ca9c11e62cd94da15c3b7ec85b58
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T16:38:59.003Z",
+              "WhenOpened": "2025-01-28T07:02:17.16Z",
               "EditorCaption": ""
             },
             {
@@ -125,7 +97,7 @@
               "RelativeToolTip": "prueba\\Form1.Designer.cs",
               "ViewState": "AgIAAKMDAAAAAAAAAAAgwLADAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T16:30:19.473Z",
+              "WhenOpened": "2025-01-28T07:02:17.261Z",
               "EditorCaption": ""
             },
             {
@@ -134,11 +106,10 @@
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\2DAM-protegido\\Desktop\\desarrollo de interfaces\\visual studio\\prueba\\prueba\\Form1.cs",
               "RelativeDocumentMoniker": "prueba\\Form1.cs",
-              "ToolTip": "C:\\Users\\2DAM-protegido\\Desktop\\desarrollo de interfaces\\visual studio\\prueba\\prueba\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "prueba\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T11:33:21.842Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\prueba\\prueba\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Usuario\\Desktop\\Instituto\\2\u00BA\\Programacion-Interfaces\\visual studio\\prueba\\prueba\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2025-01-28T07:02:17.263Z"
             }
           ]
         }
