@@ -1,0 +1,130 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Blank_A4_4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="446457ca-9d48-4120-a8ea-10e80428d097">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="ZW1wcmVzYS5jZW50cm9zIEFTICwxOSw1MSxiM2EzODdiNy1mODc3LTQyOWEtOTUzNi1lYTA5M2Fj&#xa;NDlhNGQ7ZW1wcmVzYS5lbXBsZWFkb3MgQVMgLDI5NCw2NCw3ZTAyYmM2NS02YThjLTRkNjgtYmZm&#xa;YS04NjYxYmI5MzFjYmM7ZW1wcmVzYS5kZXBhcnRhbWVudG9zIEFTICwxNTYsMTQwLGYwMmY5YjY5&#xa;LTBjMTUtNDlkMC04ZDlmLWQyZTY5M2VjZDU0ODs="/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
+	<query language="SQL"><![CDATA[SELECT empresa.departamentos.departamento,
+	empresa.empleados.nombre,
+	empresa.empleados.salario,
+	empresa.empleados.apellidos,
+	empresa.departamentos.id,
+	empresa.departamentos.id_centro,
+	empresa.empleados.id_departamento,
+	empresa.empleados.id,
+	empresa.centros.id,
+	empresa.departamentos.id,
+	empresa.departamentos.departamento,
+	empresa.departamentos.id_centro,
+	empresa.centros.centro,
+	empresa.empleados.id,
+	empresa.empleados.id_departamento,
+	empresa.empleados.salario,
+	empresa.empleados.apellidos,
+	empresa.empleados.nombre
+FROM empresa.centros
+	INNER JOIN empresa.departamentos ON 
+	 empresa.departamentos.id_centro = empresa.centros.id 
+	INNER JOIN empresa.empleados ON 
+	 empresa.empleados.id_departamento = empresa.departamentos.id]]></query>
+	<field name="departamento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="departamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="departamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="departamentos"/>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="salario" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.name" value="salario"/>
+		<property name="com.jaspersoft.studio.field.label" value="salario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="apellidos" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.label" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="departamentos"/>
+	</field>
+	<field name="id_centro" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_centro"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_centro"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="departamentos"/>
+	</field>
+	<field name="id_departamento" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_departamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_departamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="COLUMN_8" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="COLUMN_9" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centros"/>
+	</field>
+	<field name="COLUMN_10" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="departamentos"/>
+	</field>
+	<field name="COLUMN_11" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="departamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="departamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="departamentos"/>
+	</field>
+	<field name="COLUMN_12" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_centro"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_centro"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="departamentos"/>
+	</field>
+	<field name="centro" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="centro"/>
+		<property name="com.jaspersoft.studio.field.label" value="centro"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centros"/>
+	</field>
+	<field name="COLUMN_14" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="COLUMN_15" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_departamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_departamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="COLUMN_16" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.name" value="salario"/>
+		<property name="com.jaspersoft.studio.field.label" value="salario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="COLUMN_17" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.label" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="COLUMN_18" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<sortField name="centro"/>
+	<sortField name="departamento"/>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch"/>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="61" splitType="Stretch"/>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

@@ -1,0 +1,244 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Blank_A4_4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="446457ca-9d48-4120-a8ea-10e80428d097">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
+	<parameter name="SalarioMinimo" class="java.lang.String"/>
+	<query language="SQL"><![CDATA[SELECT empresa.departamentos.departamento,
+	empresa.empleados.nombre,
+	empresa.empleados.salario,
+	empresa.empleados.apellidos,
+	empresa.departamentos.id,
+	empresa.departamentos.id_centro,
+	empresa.empleados.id_departamento,
+	empresa.empleados.id,
+	empresa.centros.id,
+	empresa.departamentos.id,
+	empresa.departamentos.departamento,
+	empresa.departamentos.id_centro,
+	empresa.centros.centro,
+	empresa.empleados.id,
+	empresa.empleados.id_departamento,
+	empresa.empleados.salario,
+	empresa.empleados.apellidos,
+	empresa.empleados.nombre
+FROM empresa.centros
+	INNER JOIN empresa.departamentos ON 
+	 empresa.departamentos.id_centro = empresa.centros.id 
+	INNER JOIN empresa.empleados ON 
+	 empresa.empleados.id_departamento = empresa.departamentos.id
+Where empresa.empleados.salario > SalarioMinimo	 ]]></query>
+	<field name="departamento" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="departamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="departamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="departamentos"/>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="salario" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.name" value="salario"/>
+		<property name="com.jaspersoft.studio.field.label" value="salario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="apellidos" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.label" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="departamentos"/>
+	</field>
+	<field name="id_centro" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_centro"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_centro"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="departamentos"/>
+	</field>
+	<field name="id_departamento" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_departamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_departamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="COLUMN_8" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="COLUMN_9" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centros"/>
+	</field>
+	<field name="COLUMN_10" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="departamentos"/>
+	</field>
+	<field name="COLUMN_11" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="departamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="departamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="departamentos"/>
+	</field>
+	<field name="COLUMN_12" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_centro"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_centro"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="departamentos"/>
+	</field>
+	<field name="centro" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="centro"/>
+		<property name="com.jaspersoft.studio.field.label" value="centro"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="centros"/>
+	</field>
+	<field name="COLUMN_14" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="COLUMN_15" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_departamento"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_departamento"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="COLUMN_16" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.name" value="salario"/>
+		<property name="com.jaspersoft.studio.field.label" value="salario"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="COLUMN_17" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.label" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<field name="COLUMN_18" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="empleados"/>
+	</field>
+	<sortField name="centro"/>
+	<sortField name="departamento"/>
+	<variable name="centro1" calculation="Count" class="java.lang.Integer">
+		<expression><![CDATA[$F{centro}]]></expression>
+	</variable>
+	<variable name="departamento1" calculation="Count" class="java.lang.Integer">
+		<expression><![CDATA[$F{departamento}]]></expression>
+	</variable>
+	<variable name="nombre1" calculation="Count" class="java.lang.Integer">
+		<expression><![CDATA[$F{nombre}]]></expression>
+	</variable>
+	<variable name="id_centro1" calculation="Count" class="java.lang.Integer">
+		<expression><![CDATA[$F{id_centro}]]></expression>
+	</variable>
+	<variable name="id_centro2" calculation="DistinctCount" class="java.lang.Integer">
+		<expression><![CDATA[$F{id_centro}]]></expression>
+	</variable>
+	<variable name="id_departamento1" calculation="DistinctCount" class="java.lang.Integer">
+		<expression><![CDATA[$F{id_departamento}]]></expression>
+	</variable>
+	<variable name="id1" calculation="DistinctCount" class="java.lang.Integer">
+		<expression><![CDATA[$F{id}]]></expression>
+	</variable>
+	<variable name="id_departamento2" calculation="Count" class="java.lang.Integer">
+		<expression><![CDATA[$F{id_departamento}]]></expression>
+	</variable>
+	<variable name="id2" calculation="Count" class="java.lang.Integer">
+		<expression><![CDATA[$F{id}]]></expression>
+	</variable>
+	<variable name="id_departamento3" calculation="DistinctCount" class="java.lang.Integer">
+		<expression><![CDATA[$F{id_departamento}]]></expression>
+	</variable>
+	<variable name="id_departamento4" resetType="Group" calculation="DistinctCount" resetGroup="Centro" class="java.lang.Integer">
+		<expression><![CDATA[$F{id_departamento}]]></expression>
+	</variable>
+	<variable name="id_departamento5" resetType="Group" calculation="DistinctCount" resetGroup="Departamento" class="java.lang.Integer">
+		<expression><![CDATA[$F{id_departamento}]]></expression>
+	</variable>
+	<variable name="departamento2" resetType="Group" calculation="DistinctCount" resetGroup="Centro" class="java.lang.Integer">
+		<expression><![CDATA[$F{departamento}]]></expression>
+	</variable>
+	<variable name="salario1" resetType="Group" calculation="Sum" resetGroup="Departamento" class="java.lang.Float">
+		<expression><![CDATA[$F{salario}]]></expression>
+	</variable>
+	<variable name="salario2" resetType="Group" calculation="Sum" resetGroup="Centro" class="java.lang.Float">
+		<expression><![CDATA[$F{salario}]]></expression>
+	</variable>
+	<group name="Centro" startNewPage="true">
+		<expression><![CDATA[$F{centro}]]></expression>
+		<groupHeader>
+			<band height="41">
+				<element kind="textField" uuid="2db080df-bd7f-480c-a974-fc71a54bd4fe" x="40" y="11" width="100" height="30">
+					<expression><![CDATA[$F{centro}]]></expression>
+				</element>
+				<element kind="textField" uuid="4ca14f67-a48a-411c-9080-76ae0d5c3e35" x="420" y="11" width="100" height="30" evaluationTime="Group" evaluationGroup="Centro">
+					<expression><![CDATA[$V{departamento2}]]></expression>
+				</element>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="51">
+				<element kind="textField" uuid="2a407768-32b6-4fbb-881c-550179c51e13" x="30" y="10" width="100" height="30">
+					<expression><![CDATA[$V{id_departamento4}]]></expression>
+				</element>
+				<element kind="textField" uuid="34222d2a-84d1-4a33-a4fb-1ded4042c44e" x="400" y="10" width="100" height="30">
+					<expression><![CDATA[$V{salario2}]]></expression>
+				</element>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="Departamento">
+		<expression><![CDATA[$F{departamento}]]></expression>
+		<groupHeader>
+			<band height="49">
+				<element kind="textField" uuid="14a1317b-2a37-484a-b920-7bdd89c97938" x="90" y="10" width="100" height="30">
+					<expression><![CDATA[$F{departamento}]]></expression>
+				</element>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="44">
+				<element kind="textField" uuid="72c1cde5-6439-4a8e-a6a0-97e62315269e" x="410" y="14" width="100" height="30">
+					<expression><![CDATA[$V{salario1}]]></expression>
+				</element>
+			</band>
+		</groupFooter>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="36" splitType="Stretch"/>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="30" splitType="Stretch"/>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<element kind="textField" uuid="f0da94b3-e16a-4826-9cba-1989ae8ff6e5" x="120" y="10" width="100" height="30">
+				<expression><![CDATA[$F{nombre}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f9b78e18-6f34-411e-b560-d1130ccd2646"/>
+			</element>
+			<element kind="textField" uuid="1055b21c-ff0c-4f3f-955a-7bb23f3317f0" x="240" y="10" width="100" height="30">
+				<expression><![CDATA[$F{apellidos}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ca3bce01-6a1b-4165-8e48-9b07656d5974"/>
+			</element>
+			<element kind="textField" uuid="6d727611-1e40-44b3-8032-a1e97b15f3a7" x="370" y="10" width="100" height="30">
+				<expression><![CDATA[$F{salario}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1213e1d8-ab56-4adc-bb33-720612626823"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch">
+		<element kind="textField" uuid="da088ef1-4912-434b-8676-68b92911639e" x="228" y="15" width="100" height="30">
+			<expression><![CDATA[$P{SalarioMedio}]]></expression>
+		</element>
+	</columnFooter>
+	<pageFooter height="29" splitType="Stretch"/>
+	<summary height="30" splitType="Stretch">
+		<element kind="textField" uuid="a8650fae-8337-4784-997f-dd8669924d8d" x="40" y="0" width="100" height="30">
+			<expression><![CDATA[$V{id_centro2}]]></expression>
+		</element>
+		<element kind="textField" uuid="e7a45e45-537f-4252-be1e-7cfc2fa78828" x="450" y="0" width="100" height="30">
+			<expression><![CDATA[$V{id2}]]></expression>
+		</element>
+		<element kind="textField" uuid="380205e5-879a-473b-ba4a-e4af2e7fef1d" x="220" y="0" width="100" height="30">
+			<expression><![CDATA[$V{id_departamento3}]]></expression>
+		</element>
+	</summary>
+</jasperReport>
