@@ -1,0 +1,143 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="Examen" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f5195604-4afe-495f-8d5d-4cf6b0233cc3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataAdapter.jrdax"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<query language="sql"><![CDATA[SELECT videoclub.peliculas.titulo,
+	videoclub.peliculas.presupuesto,
+	videoclub.personas.nombre,
+	videoclub.personas.apellidos,
+	videoclub.personas.sueldo,
+	videoclub.personas.cod_persona,
+	videoclub.peliculas.cod_pelicula
+FROM videoclub.actuan
+	INNER JOIN videoclub.peliculas ON 
+	 videoclub.actuan.cod_pelicula = videoclub.peliculas.cod_pelicula 
+	INNER JOIN videoclub.personas ON 
+	 videoclub.actuan.cod_persona = videoclub.personas.cod_persona]]></query>
+	<field name="titulo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="peliculas"/>
+	</field>
+	<field name="presupuesto" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="presupuesto"/>
+		<property name="com.jaspersoft.studio.field.label" value="presupuesto"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="peliculas"/>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="personas"/>
+	</field>
+	<field name="apellidos" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.label" value="apellidos"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="personas"/>
+	</field>
+	<field name="sueldo" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="sueldo"/>
+		<property name="com.jaspersoft.studio.field.label" value="sueldo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="personas"/>
+	</field>
+	<field name="cod_persona" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="cod_persona"/>
+		<property name="com.jaspersoft.studio.field.label" value="cod_persona"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="personas"/>
+	</field>
+	<field name="cod_pelicula" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="cod_pelicula"/>
+		<property name="com.jaspersoft.studio.field.label" value="cod_pelicula"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="peliculas"/>
+	</field>
+	<sortField name="cod_pelicula"/>
+	<variable name="cod_persona1" resetType="Group" calculation="DistinctCount" resetGroup="Peliculas" class="java.lang.Integer">
+		<expression><![CDATA[$F{cod_persona}]]></expression>
+	</variable>
+	<variable name="cod_pelicula1" calculation="Count" class="java.lang.Integer">
+		<expression><![CDATA[$F{cod_pelicula}]]></expression>
+	</variable>
+	<variable name="cod_persona2" calculation="Count" class="java.lang.Integer">
+		<expression><![CDATA[$F{cod_persona}]]></expression>
+	</variable>
+	<variable name="cod_persona3" calculation="DistinctCount" class="java.lang.Integer">
+		<expression><![CDATA[$F{cod_persona}]]></expression>
+	</variable>
+	<variable name="cod_pelicula2" calculation="DistinctCount" class="java.lang.Integer">
+		<expression><![CDATA[$F{cod_pelicula}]]></expression>
+	</variable>
+	<variable name="sueldo1" resetType="Group" calculation="Sum" resetGroup="Peliculas" class="java.lang.Double">
+		<expression><![CDATA[$F{sueldo}]]></expression>
+	</variable>
+	<group name="Peliculas">
+		<expression><![CDATA[$F{cod_pelicula}]]></expression>
+		<groupHeader>
+			<band height="60">
+				<element kind="textField" uuid="db0cc8b7-4f7e-4a62-b5d9-c7f1c7594dea" x="30" y="0" width="100" height="30">
+					<expression><![CDATA[$F{titulo}]]></expression>
+				</element>
+				<element kind="textField" uuid="6af50a50-853e-472c-9320-82829cbebd8e" x="180" y="0" width="100" height="30">
+					<expression><![CDATA["Presupuesto: "+$F{presupuesto}  + "$"]]></expression>
+				</element>
+				<element kind="staticText" uuid="b36fb153-623b-4270-aa79-5c9b0df222a3" x="30" y="30" width="100" height="30">
+					<text><![CDATA[Nombre]]></text>
+				</element>
+				<element kind="staticText" uuid="03bce22a-0885-4f82-8400-0f3d06438be6" x="170" y="30" width="100" height="30">
+					<text><![CDATA[Apellidos]]></text>
+				</element>
+				<element kind="staticText" uuid="53bf7791-675f-4599-a441-be6a173319e7" x="300" y="30" width="100" height="30">
+					<text><![CDATA[Sueldo]]></text>
+				</element>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="30">
+				<element kind="textField" uuid="dffa64bb-2cf8-4ff5-b36e-1398377636d9" x="60" y="0" width="140" height="30">
+					<expression><![CDATA["Personas que actuan: "+$V{cod_persona1}]]></expression>
+				</element>
+				<element kind="textField" uuid="62e629e9-016c-4c5f-b382-4ba43f900be1" x="340" y="0" width="130" height="30">
+					<expression><![CDATA["Balance de situacion: "+
+SUM($F{presupuesto},-$F{sueldo}) +"$"]]></expression>
+				</element>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="personas">
+		<expression><![CDATA[$F{cod_persona}]]></expression>
+		<groupHeader>
+			<band height="17"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="13"/>
+		</groupFooter>
+	</group>
+	<background height="1" splitType="Stretch"/>
+	<title height="15" splitType="Stretch"/>
+	<pageHeader height="11" splitType="Stretch"/>
+	<columnHeader height="11" splitType="Stretch"/>
+	<detail>
+		<band height="50" splitType="Stretch">
+			<element kind="textField" uuid="d1f6e36a-4564-4b33-a2c6-320521b68651" x="40" y="0" width="100" height="30">
+				<expression><![CDATA[$F{nombre}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ea3972b8-7e1e-4a6d-bc17-b19bec807e6e"/>
+			</element>
+			<element kind="textField" uuid="f4e0b46c-7ea2-40fd-a069-0e01b0866ae6" x="170" y="0" width="100" height="30">
+				<expression><![CDATA[$F{apellidos}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4bffc753-9dff-40a6-8553-1cae4d2ae9b0"/>
+			</element>
+			<element kind="textField" uuid="081b33dd-e44b-41f0-bc2c-4ebaab97849c" x="300" y="0" width="100" height="30">
+				<expression><![CDATA[$F{sueldo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4bb5bd4d-ec7f-40a1-9562-f41a2d4cd3ae"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="12" splitType="Stretch"/>
+	<pageFooter height="10" splitType="Stretch"/>
+	<summary height="80" splitType="Stretch">
+		<element kind="textField" uuid="f4f9f8d9-ccb9-462b-b7f2-417b079f7fae" x="380" y="50" width="100" height="30">
+			<expression><![CDATA["Total actores: "+$V{cod_persona3}]]></expression>
+		</element>
+		<element kind="textField" uuid="2882ec50-bbb8-4d5f-b503-f1e3d6a555f9" x="60" y="49" width="100" height="30">
+			<expression><![CDATA["Total peliculas: "+$V{cod_pelicula2}]]></expression>
+		</element>
+	</summary>
+</jasperReport>
